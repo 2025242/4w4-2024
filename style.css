@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*
+Theme Name: theme salma
+Theme URI: file:///C:/Users/e2025242/Documents/themesalma/index.htm
+Author: Salma Bourakkadi 
+Author URI: https://wordpress.org/
+Description: theme des base developpé dans le cour de 4w4
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme salma
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+:root {
+  --couleur-arriere-entete: #aaa;
+  --couleur-arriere-accueil: #50bde9;
+  --couleur-arriere-evenement: #8867e2;
+  --couleur-arriere-galerie: #54e0c2;
+  --couleur-arriere-footer: #b2df39;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  min-height: 100vh;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  flex: 0 1 1100px;
+  border: 1px solid;
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+}
+
+h1 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+}/*# sourceMappingURL=style.css.map */
