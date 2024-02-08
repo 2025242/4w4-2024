@@ -1,10 +1,37 @@
+
 h1{
  font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+ color: rgda(255,255,255,.5);
  font-weight: 600;
  font-style: normal;
 }
 h2{
     font-size:clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+color: rgba(14, 67, 244, 0.4);
     font-weight: 500;
-font-style: normal;
+    font-style:initial;
+
+}
+h3 {
+    font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+    color: rgba(103, 6, 91, 0.8);
+    font-weight: 500;
+    font-style: oblique;
+}
+
+h4 {
+    font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+    color:rgba(10, 129, 16, 0.7);;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+    color: rgba(34, 90, 212, 0.6);;
+    font-weight: 300;
+    font-style: italic;
+}
+p {
+    font-size: 1.2rem; 
 }
