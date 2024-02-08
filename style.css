@@ -32,17 +32,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
   display: flex;
   flex-direction: column;
+  font-family: "prompt", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
-  border: 1px solid;
+  flex: 0 1 900px;
+  border: 1px solid black;
 }
 
 #entete {
@@ -66,5 +69,13 @@ body {
 }
 
 h1 {
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-weight: 500;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */
