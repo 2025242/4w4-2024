@@ -12,6 +12,6 @@
 
 ## Ce que vous devez faire:
 
-### Utiser la fonction hsl
+### Utiser la fonction 
 ### Intégrer les vagues
 ### intégrer une diagonal

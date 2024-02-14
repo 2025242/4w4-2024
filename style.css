@@ -17,11 +17,35 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 :root {
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #50bde9;
-  --couleur-arriere-evenement: #8867e2;
-  --couleur-arriere-galerie: #54e0c2;
-  --couleur-arriere-footer: #b2df39;
+  /*
+  --couleur-arriere-entete : #aaa;
+  --couleur-arriere-accueil : #50bde9;
+  --couleur-arriere-evenement : #8867e2;
+  --couleur-arriere-galerie : #54e0c2;
+  --couleur-arriere-footer : #b2df39;
+  --transparence-section :.5;*/
+  --u1: 180;
+  --u2: calc(var(--u1) + 180);
+  --u3: calc(var(--u1) + -30);
+  --u4: calc(var(--u2) +30);
+  /*La saturation*/
+  --s-arriere: 80%;
+  --s-avant: 100%;
+  /*la luminosité*/
+  --l-arriere:40%;
+  --l-avant: 80%;
+  /*couleur arrier plan backgroud color*/
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere),var(--l-arriere));
+  --couleur-arriere-accueil:hsl(var(--u2), var(--s-arriere),var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere),var(--l-arriere));
+  --couleur-arriere-galerie:hsl(var(--u4), var(--s-arriere),var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere),var(--l-arriere));
+  /*couleur avant plan -color*/
+  --couleur-avant-entete: hsl(var(--u1), var(--s-avant),var(--l-avant));
+  --couleur-avant-accueil:hsl(var(--u2), var(--s-avant),var(--l-avant));
+  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant),var(--l-avant));
+  --couleur-avant-galerie:hsl(var(--u4), var(--s-avant),var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u1), var(--s-avant),var(--l-avant));
   --transparence-section:.5;
 }
 
@@ -57,22 +81,27 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-avant-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-avant-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-avant-footer);
 }
 
 h1 {
