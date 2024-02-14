@@ -11,8 +11,7 @@
 
 ### ajout des regle de style sass pour 
 - chaque element des h 
--changer les couleur et la transparence de 
-bacgroud color
+-changer les couleur et la transparence de bacgroud color
 -color
 -utiliser la fonction rgba()
 -creer de nouvel variable:<-largeur de la zone central .global>, .global>footer, 

@@ -22,6 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-arriere-evenement: #8867e2;
   --couleur-arriere-galerie: #54e0c2;
   --couleur-arriere-footer: #b2df39;
+  --transparence-section:.5;
 }
 
 * {
