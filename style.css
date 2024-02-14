@@ -29,11 +29,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --u3: calc(var(--u1) + -30);
   --u4: calc(var(--u2) +30);
   /*La saturation*/
-  --s-arriere: 80%;
+  --s-arriere: 100%;
   --s-avant: 100%;
   /*la luminosité*/
-  --l-arriere:40%;
-  --l-avant: 80%;
+  --l-arriere:80%;
+  --l-avant: 30%;
   /*couleur arrier plan backgroud color*/
   --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere),var(--l-arriere));
   --couleur-arriere-accueil:hsl(var(--u2), var(--s-arriere),var(--l-arriere));
@@ -82,6 +82,7 @@ body {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-avant-entete);
+  position: relative;
 }
 
 #accueil {
@@ -141,4 +142,21 @@ h5 {
 
 p {
   font-size: 1.2rem;
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 49px;
 }/*# sourceMappingURL=style.css.map */
