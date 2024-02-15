@@ -1,0 +1,15 @@
+.diagonal{
+    position: relative;
+    z-index: 1;
+}
+.diagonal::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(74, 143, 238);
+    z-index: -1;
+    transform:skewY(-5deg) ;
+}

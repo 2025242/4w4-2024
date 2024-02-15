@@ -21,9 +21,9 @@ min-height: 40vh;
 .global > header,
 .global > footer{
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+ // border: 1px solid #aaa;
   padding: 3rem 1rem;
-  background-color: rgba(255,255,255,var(--transparence-section));
+ // background-color: rgba(255,255,255,var(--transparence-section));
 }
 #entete, #footer{
   min-height: 20vh;
@@ -36,16 +36,22 @@ position: relative;
 #accueil{
     background-color: var(--couleur-arriere-accueil);
     color: var(--couleur-avant-accueil);
+   
+
+    
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
-    color: var(--couleur-avant-evenement);
+    //color: var(--couleur-avant-evenement);
+    
 }
 #galerie{
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-avant-galerie);
+    position: relative;
 }
 #footer{
     background-color: var(--couleur-arriere-footer);
     color: var(--couleur-avant-footer);
+  
 }

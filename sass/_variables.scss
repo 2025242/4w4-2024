@@ -19,22 +19,43 @@
     /*la luminosité*/
     --l-arriere :80%;
     --l-avant : 30%;
-    /*couleur arrier plan backgroud color*/ 
-
-
-
+    /*couleur arrier plan backgroud color
 
     --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere),var(--l-arriere));
     --couleur-arriere-accueil :hsl(var(--u2), var(--s-arriere),var(--l-arriere));
     --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere),var(--l-arriere));
     --couleur-arriere-galerie :hsl(var(--u4), var(--s-arriere),var(--l-arriere));
-    --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere),var(--l-arriere));
+    --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere),var(--l-arriere));*/
 /*couleur avant plan -color*/
     --couleur-avant-entete : hsl(var(--u1), var(--s-avant),var(--l-avant));
     --couleur-avant-accueil :hsl(var(--u2), var(--s-avant),var(--l-avant));
     --couleur-avant-evenement : hsl(var(--u3), var(--s-avant),var(--l-avant));
     --couleur-avant-galerie :hsl(var(--u4), var(--s-avant),var(--l-avant));
     --couleur-avant-footer : hsl(var(--u1), var(--s-avant),var(--l-avant));
-    --transparence-section :.5;
+   
 
+
+
+
+    /**/
+    
+    --couleur-arriere-entete: hsl(var(--u1),100%,90%);
+    --couleur-arriere-accueil: hsl(var(--u1),100%, 80%);
+    //--couleur-arriere-evenement: hsl(var(--u1),100%, 40%);
+   // --couleur-arriere-galerie: hsl(var(--u1),100%, 20%);
+    --couleur-arriere-footer: hsl(var(--u1),100%,10%);
+
+    --couleur-arriere-evenement: var( --couleur-arriere-accueil);
+    --couleur-arriere-galerie: var( --couleur-arriere-accueil);
+
+
+    --couleur-avant-entete : hsl(var(--u1), 100%,10%);
+    --couleur-avant-accueil :hsl(var(--u1),100%,20%);
+    --couleur-avant-evenement : hsl(var(--u1), 100%,30%);
+    --couleur-avant-galerie :hsl(var(--u1), 100%,40%);
+    --couleur-avant-footer : hsl(var(--u1), 100%,50%);
+ 
 }
+
+
+
