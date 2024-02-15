@@ -1,4 +1,8 @@
 # Labo #2
+
+## github page 
+ - https://2025242.github.io/4w4-2024/
+
 ## Utilisation de la fonction hsl()
 ## Integration d'effet vague et diagonal
 
