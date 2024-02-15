@@ -4,34 +4,72 @@ h1{
  color: rgda(255,255,255,.5);
  font-weight: 600;
  font-style: normal;
+ margin-top: 0;
+ padding: 20px;
+ text-shadow: 2px 2px 5px rgba(248, 105, 214, 0.913)
+ 
 }
+
 h2{
-    font-size:clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-    color: rgba(14, 67, 244, 0.4);
-    font-weight: 500;
+    font-size:clamp(0.5rem, -1rem + 7.333vw, 2rem);
+    //color: rgba(14, 67, 244, 0.4);
+    font-weight: 300;
+    // text-align: center; 
     font-style:initial;
+    padding: 20px;
+  
 
 }
 h3 {
     font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-    color: rgba(35, 50, 101, 0.4);
+   // color: rgba(35, 50, 101, 0.4);
     font-weight: 500;
     font-style: oblique;
+   
+
 }
 
 h4 {
     font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-    color:rgba(18, 83, 130, 0.4);
+   // color:rgba(18, 83, 130, 0.4);
     font-weight: 400;
+    margin-bottom: 100px;
     font-style: normal;
 }
 
 h5 {
     font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-    color: rgba(170, 221, 232, 0.6);
+   // color: rgba(170, 221, 232, 0.6);
     font-weight: 300;
     font-style: italic;
+    margin-bottom: 100px;
 }
-p {
+p{
     font-size: 1.2rem; 
+}
+footer a button {
+  
+    font-size: 1.2rem; 
+    text-align: center;
+    justify-content: center;
+ 
+
+}
+button {
+    background-color: #0077cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005580;
+}
+.image{
+    display: flex;
+    margin-bottom: 100px;
+    
+   
 }

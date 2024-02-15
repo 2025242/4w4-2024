@@ -1,6 +1,9 @@
 .diagonal{
     position: relative;
     z-index: 1;
+   
+  
+  
 }
 .diagonal::after{
     position: absolute;
@@ -9,7 +12,33 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgb(74, 143, 238);
+    background-color: var(--couleur-avant-galerie);
+    box-shadow: 0 0 50px rgba(232, 74, 238, 0.7);
     z-index: -1;
     transform:skewY(-5deg) ;
+    animation: pulseAnimation 2s infinite;
+}
+@keyframes pulseAnimation {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(240, 65, 208, 0.951);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(157, 31, 167, 0.741);
+    }
+    100% {
+        box-shadow: 0 0 10px 5px rgba(224, 40, 212, 0.954);
+    }
+}
+
+
+
+.diagonal::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: skewY(-5deg);
 }

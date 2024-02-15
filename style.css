@@ -47,17 +47,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-avant-evenement: hsl(var(--u3), var(--s-avant),var(--l-avant));
   --couleur-avant-galerie:hsl(var(--u4), var(--s-avant),var(--l-avant));
   --couleur-avant-footer: hsl(var(--u1), var(--s-avant),var(--l-avant));
-  /**/
+  /*mono*/
   --couleur-arriere-entete: hsl(var(--u1),100%,90%);
   --couleur-arriere-accueil: hsl(var(--u1),100%, 80%);
   --couleur-arriere-footer: hsl(var(--u1),100%,10%);
   --couleur-arriere-evenement: var( --couleur-arriere-accueil);
   --couleur-arriere-galerie: var( --couleur-arriere-accueil);
-  --couleur-avant-entete: hsl(var(--u1), 100%,10%);
-  --couleur-avant-accueil:hsl(var(--u1),100%,20%);
+  /*couleur avant plan*/
+  --couleur-avant-entete: hsl(var(--u1), 100%,30%);
+  --couleur-avant-accueil:hsl(var(--u1),100%,30%);
   --couleur-avant-evenement: hsl(var(--u1), 100%,30%);
-  --couleur-avant-galerie:hsl(var(--u1), 100%,40%);
-  --couleur-avant-footer: hsl(var(--u1), 100%,50%);
+  --couleur-avant-galerie:hsl(var(--u1), 100%,10%);
+  --couleur-avant-footer: hsl(var(--u1), 100%,30%);
 }
 
 * {
@@ -74,7 +75,7 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 20vh;
 }
 
 .global > section,
@@ -85,7 +86,7 @@ body {
 }
 
 #entete, #footer {
-  min-height: 20vh;
+  min-height: 40vh;
 }
 
 #entete {
@@ -97,10 +98,12 @@ body {
 #accueil {
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-avant-accueil);
+  min-height: 40vh;
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
 }
 
 #galerie {
@@ -119,38 +122,64 @@ h1 {
   color: rgda(255, 255, 255, 0.5);
   font-weight: 600;
   font-style: normal;
+  margin-top: 0;
+  padding: 20px;
+  text-shadow: 2px 2px 5px rgba(248, 105, 214, 0.913);
 }
 
 h2 {
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-  color: rgba(14, 67, 244, 0.4);
-  font-weight: 500;
+  font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
+  font-weight: 300;
   font-style: initial;
+  padding: 20px;
 }
 
 h3 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-  color: rgba(35, 50, 101, 0.4);
   font-weight: 500;
   font-style: oblique;
 }
 
 h4 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-  color: rgba(18, 83, 130, 0.4);
   font-weight: 400;
+  margin-bottom: 100px;
   font-style: normal;
 }
 
 h5 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-  color: rgba(170, 221, 232, 0.6);
   font-weight: 300;
   font-style: italic;
+  margin-bottom: 100px;
 }
 
 p {
   font-size: 1.2rem;
+}
+
+footer a button {
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #0077cc;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005580;
+}
+
+.image {
+  display: flex;
+  margin-bottom: 100px;
 }
 
 .vague {
@@ -199,7 +228,31 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgb(74, 143, 238);
+  background-color: var(--couleur-avant-galerie);
+  box-shadow: 0 0 50px rgba(232, 74, 238, 0.7);
+  z-index: -1;
+  transform: skewY(-5deg);
+  animation: pulseAnimation 2s infinite;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(240, 65, 208, 0.951);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(157, 31, 167, 0.741);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(224, 40, 212, 0.954);
+  }
+}
+.diagonal::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   z-index: -1;
   transform: skewY(-5deg);
 }/*# sourceMappingURL=style.css.map */
