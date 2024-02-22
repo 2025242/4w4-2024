@@ -20,10 +20,14 @@ min-height: 20vh;
 .global > section,
 .global > header,
 .global > footer{
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
  // border: 1px solid #aaa;
   padding: 3rem 1rem;
  // background-color: rgba(255,255,255,var(--transparence-section));
+}
+.global > header{
+    flex:1;
+    min-height: auto;
 }
 #entete, #footer{
   min-height: 40vh;
@@ -32,6 +36,7 @@ min-height: 20vh;
 background-color: var(--couleur-arriere-entete);
 color: var(--couleur-avant-entete);
 position: relative;
+min-height: 60vh;
 }
 #accueil{
     background-color: var(--couleur-arriere-accueil);

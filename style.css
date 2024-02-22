@@ -81,8 +81,13 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   padding: 3rem 1rem;
+}
+
+.global > header {
+  flex: 1;
+  min-height: auto;
 }
 
 #entete, #footer {
@@ -93,6 +98,7 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-avant-entete);
   position: relative;
+  min-height: 60vh;
 }
 
 #accueil {
@@ -115,6 +121,12 @@ body {
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-avant-footer);
+}
+
+.entete__header {
+  background-image: url("image/logo.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20%;
 }
 
 h1 {
