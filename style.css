@@ -148,9 +148,9 @@ button:hover {
 }
 
 h1 {
-  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+  font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
   color: rgda(255, 255, 255, 0.5);
-  font-weight: 600;
+  font-weight: 300;
   font-style: normal;
   margin-top: 0;
   padding: 20px;
@@ -162,11 +162,12 @@ h2 {
   font-weight: 300;
   font-style: initial;
   padding: 20px;
+  font-size: 3rem;
 }
 
 h3 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-  font-weight: 500;
+  font-weight: 300;
   font-style: oblique;
   padding: 20px;
 }
@@ -176,6 +177,7 @@ h4 {
   font-weight: 400;
   margin-bottom: 100px;
   font-style: normal;
+  color: var(--couleur-avant-entete);
 }
 
 h5 {
@@ -183,16 +185,11 @@ h5 {
   font-weight: 300;
   font-style: italic;
   margin-bottom: 100px;
+  color: var(--couleur-avant-entete);
 }
 
 p {
   font-size: 1.2rem;
-}
-
-footer a button {
-  font-size: 1.2rem;
-  text-align: center;
-  justify-content: center;
 }
 
 .image {
@@ -278,4 +275,50 @@ span {
   bottom: 0;
   z-index: -1;
   transform: skewY(-5deg);
+}
+
+footer {
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%; /* Ajustez la largeur des sections selon vos besoins */
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  color: var(--couleur-avant-entete);
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+/* Style pour les liens au survol */
+.footer-section a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
