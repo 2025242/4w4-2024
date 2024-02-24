@@ -1,21 +1,24 @@
-# Labo #2
+# exercice #1
 
 ## github page 
  - https://2025242.github.io/4w4-2024/
 
-## Utilisation de la fonction hsl()
+## Nouvelles fonctionnalités
+
+### Bouton stylisé avec effet de survol
+J'ai récemment ajouté un bouton à l'interface utilisateur et l'ai stylisé pour une apparence moderne. 
+Le bouton réagit au survol avec des changements de couleur et un effet visuel agréable.
+
 ## Integration d'effet vague et diagonal
 
-### Références utiles
+## Footer amélioré avec contenu informatif
 
-- référence hsl()
- - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
- - https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
- - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
+J'ai enrichi le pied de page (footer) de mon
+ site avec des informations utiles. Vous y trouverez 
+ des détails sur l'ecole, des coordonnées de contact 
+ et des liens rapides vers les sections clés du site.
 
-
-## Ce que vous devez faire:
-
-### Utiser la fonction 
-### Intégrer les vagues
-### intégrer une diagonal
+## Amélioration des couleurs du texte
+J'ai également pris le temps d'harmoniser et 
+d'améliorer les couleurs du texte dans l'ensemble du 
+site pour une expérience utilisateur plus cohérente et esthétique.
