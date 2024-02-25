@@ -127,6 +127,7 @@ body {
   background-image: url("image/logo.png");
   background-repeat: no-repeat;
   background-position: 100% 20%;
+  margin-bottom: 200px;
 }
 
 button {

@@ -1,8 +1,7 @@
 # exercice #1
 
 ## github page 
- - file:///C:/Users/User/OneDrive%20-%20Coll%C3%A8ge%20de%20Maisonneuve/web%202024/themesalma/index.htm#
-
+ - https://2025242.github.io/4w4-2024/
 ## Nouvelles fonctionnalités
 
 ### Bouton stylisé avec effet de survol
