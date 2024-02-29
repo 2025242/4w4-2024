@@ -3,4 +3,36 @@
     background-repeat: no-repeat;
     background-position: 100% 20%;
     margin-bottom: 200px;
+
+    
 }
+.cartes-cours {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Espace entre les cartes */
+  }
+  
+  /* Style pour chaque carte */
+  .carte-cours {
+    border: 1px solid #ddd; /* Bordure pour séparer les cartes, tu peux ajuster la couleur et l'épaisseur selon tes préférences */
+    padding: 15px;
+    text-align: left;
+  }
+  
+  /* Style pour le titre de chaque carte */
+  .carte-cours h5 {
+    margin: 0;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .carte-cours p{
+    font-size: 7px;
+   }
+
+  
+  /* Style pour la durée de chaque cours */
+  .carte-cours span {
+    display: block; /* Pour que la durée apparaisse sur une nouvelle ligne */
+    margin-top: 10px;
+    color: #666; /* Couleur de texte plus claire pour la durée */
+  }
