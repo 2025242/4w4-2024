@@ -9,7 +9,10 @@ h1{
  text-shadow: 2px 2px 5px rgba(248, 105, 214, 0.913)
  
 }
-
+.carte-cours h5 .sigle {
+    font-size: 14px; /* Ajuste la taille du sigle */
+    color: #4CAF50; /* Change la couleur du sigle */
+}
 h2{
     font-size:clamp(0.5rem, -1rem + 7.333vw, 2rem);
     //color: rgba(14, 67, 244, 0.4);
