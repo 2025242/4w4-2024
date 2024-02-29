@@ -14,7 +14,7 @@ Ce laboratoire vise à créer un site WordPress en utilisant le thème adapté d
 - Création d'un design responsive pour les cartes de cours
 
 ## Github-Page
-[Page GitHub](lien_vers_votre_page_github)
+ https://2025242.github.io/4w4-2024/
 
 ### Décomposition des titres de cours
 - **582-1M1** - *Création vidéo* - *Durée : 75h* - Ce cours initie l’étudiant au traitement des images en mouvement...
