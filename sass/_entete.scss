@@ -8,7 +8,8 @@
 }
 .cartes-cours {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    //grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
     gap: 20px; /* Espace entre les cartes */
   }
 
@@ -44,3 +45,14 @@
   .carte-cours:hover {
     background-color: #a3d2e1; /* Couleur de fond au survol */
   }
+  .carte-cours {
+    width: 100%; /* Utilise 100% pour occuper la largeur totale de son conteneur */
+    margin-bottom: 20px; /* Ajoute une marge en bas pour espacer les cartes */
+    box-sizing: border-box;
+}
+
+/* Ajoute ces styles pour créer un effet hover sur chaque carte */
+.carte-cours:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
