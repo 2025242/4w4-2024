@@ -75,7 +75,6 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 20vh;
 }
 
 .global > section,
@@ -123,7 +122,7 @@ body {
   color: var(--couleur-avant-footer);
 }
 
-.entete__header {
+.hero {
   background-image: url("image/logo.png");
   background-repeat: no-repeat;
   background-position: 100% 20%;
