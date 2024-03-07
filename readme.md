@@ -2,7 +2,7 @@
 
 ## GitHub Page
 
-[Lien vers la GitHub Page](lien-vers-votre-github-page)
+[Lien vers la GitHub Page](https://2025242.github.io/4w4-2024/)
 ## Auteur
 Nom de l'auteur
 
@@ -28,8 +28,8 @@ Nom de l'auteur
 - **Production de 5 commits:** Les commits doivent être pertinents et liés aux différentes étapes du Labo 4.
 ## Fonctionnalités Ajoutées
 
-**Logo dans le Header**: J'ai intégré un logo dans l'en-tête du site pour une identité visuelle améliorée.
-**Styles Améliorés pour les Liens du Menu**: Les liens du menu ont été stylisés avec un effet au survol pour une expérience utilisateur plus attrayante.
-**Ajout d'un Titre `<h1>`**: Un titre "Thème WordPress de Salma" a été ajouté à côté du menu pour renforcer la personnalisation du site.
-**Intégration de la Police Prompt**: J'ai inclus la police Prompt depuis Google Fonts pour une typographie moderne et lisible.
-**Effet de Transition en Douceur du Menu**: Le menu bénéficie désormais d'un effet de transition en douceur, améliorant l'expérience utilisateur lors de l'ouverture et de la fermeture.
+1. **Logo dans le Header**: J'ai intégré un logo dans l'en-tête du site pour une identité visuelle améliorée.
+2. **Styles Améliorés pour les Liens du Menu**: Les liens du menu ont été stylisés avec un effet au survol pour une expérience utilisateur plus attrayante.
+3. **Ajout d'un Titre `<h1>`**: Un titre "Thème WordPress de Salma" a été ajouté à côté du menu pour renforcer la personnalisation du site.
+4. **Intégration de la Police Prompt**: J'ai inclus la police Prompt depuis Google Fonts pour une typographie moderne et lisible.
+5. **Effet de Transition en Douceur du Menu**: Le menu bénéficie désormais d'un effet de transition en douceur, améliorant l'expérience utilisateur lors de l'ouverture et de la fermeture.
