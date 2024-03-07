@@ -15,6 +15,8 @@
 <body>
     <div id="menu__entete" class="global">
         <header class="menu__header">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="Logo" class="logo">
+        <h1>Thème WordPress de Salma</h1>
             <input type="checkbox" name="" id="chk_burger">
             <label id="burger" for="chk_burger">
                 <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000">

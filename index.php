@@ -4,10 +4,12 @@
 <div>
     <div id="entete" class="global">
       <section class="entete__header">
-        <h1>Thème wordpress de salma (h1)<br>   </h1>
+       
         <h2>4W4 - Concepetion d'interface <span> et dévelopement web</span></h2>
-        <h3>TIM-Collège de Maisonneuve</h3><br>
-                <button>Nous joindre</button>
+        <h3>TIM-Collège de Maisonneuve <br><br>
+        <button>Nous joindre</button>
+        </h3>
+           
               
       </section>
       <?php get_template_part("gabarits/vague"); ?>
