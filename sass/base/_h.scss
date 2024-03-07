@@ -1,44 +1,47 @@
+h1 {
+    font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
+    color: rgda(255, 255, 255, .5);
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(248, 105, 214, 0.913)
+}
 
-h1{
- font-size:clamp(0.5rem, -1rem + 7.333vw, 2rem);
- color: rgda(255,255,255,.5);
- font-weight: 300;
- font-style: normal;
- margin-top: 0;
- padding: 20px;
- text-shadow: 2px 2px 5px rgba(248, 105, 214, 0.913)
- 
-}
 .carte-cours h5 .sigle {
-    font-size: 14px; /* Ajuste la taille du sigle */
-    color: #4CAF50; /* Change la couleur du sigle */
+    font-size: 14px;
+    /* Ajuste la taille du sigle */
+    color: #4CAF50;
+    /* Change la couleur du sigle */
 }
-h2{
-    font-size:clamp(0.5rem, -1rem + 7.333vw, 2rem);
+
+h2 {
+    font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
     text-align: center;
     //color: rgba(14, 67, 244, 0.4);
     font-weight: 300;
     // text-align: center; 
-    font-style:initial;
+    font-style: initial;
     padding: 20px;
     font-size: 3rem;
-  
+
 
 }
+
 h3 {
-    font-size:  clamp(1rem, -2rem + 12.5vw, 2rem);
+    font-size: clamp(1rem, -2rem + 12.5vw, 2rem);
     text-align: center;
-   // color: rgba(35, 50, 101, 0.4);
+    // color: rgba(35, 50, 101, 0.4);
     font-weight: 300;
     font-style: oblique;
     padding: 20px;
-   
+
 
 }
 
 h4 {
-    font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-   // color:rgba(18, 83, 130, 0.4);
+    font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+    // color:rgba(18, 83, 130, 0.4);
     font-weight: 400;
     margin-bottom: 100px;
     font-style: normal;
@@ -46,24 +49,26 @@ h4 {
 }
 
 h5 {
-    font-size:  clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
-   // color: rgba(170, 221, 232, 0.6);
+    font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+    // color: rgba(170, 221, 232, 0.6);
     font-weight: 300;
     font-style: italic;
     margin-bottom: 100px;
     color: var(--couleur-avant-entete);
 }
-p{
-    font-size: 1.2rem; 
+
+p {
+    font-size: 1.2rem;
 }
 
 
-.image{
+.image {
     display: flex;
     margin-bottom: 100px;
     justify-content: space-between;
-   
+
 }
-span{
+
+span {
     display: block;
 }

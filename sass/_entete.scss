@@ -1,58 +1,69 @@
-.hero{
-    background-image: url(  "image/logo.png");
-    background-repeat: no-repeat;
-    background-position: 100% 20%;
-    margin-bottom: 200px;
+.hero {
+  background-image: url("image/logo.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20%;
+  margin-bottom: 200px;
 
-    
+
 }
+
 .cartes-cours {
-    display: grid;
-    //grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
-    gap: 20px; /* Espace entre les cartes */
-  }
+  display: grid;
+  //grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  /* Espace entre les cartes */
+}
 
-  /* Style pour chaque carte */
-  .carte-cours {
-    border: 1px solid #ddd; /* Bordure pour séparer les cartes, tu peux ajuster la couleur et l'épaisseur selon tes préférences */
-    padding: 15px;
-    text-align: left;
-  }
-  
-  /* Style pour le titre de chaque carte */
-  .carte-cours h5 {
-    margin: 0;
-    font-size: 19px;
-    color: rgb(99, 137, 179);
-    font-weight: bold;
-  }
-  .carte-cours p{
-    font-size: 13px;
-   }
+/* Style pour chaque carte */
+.carte-cours {
+  border: 1px solid #ddd;
+  /* Bordure pour séparer les cartes, tu peux ajuster la couleur et l'épaisseur selon tes préférences */
+  padding: 15px;
+  text-align: left;
+}
 
-  
-  /* Style pour la durée de chaque cours */
-  .carte-cours span {
-    display: block; /* Pour que la durée apparaisse sur une nouvelle ligne */
-    margin-top: 10px;
-    color: #666; /* Couleur de texte plus claire pour la durée */
-  }
-   .carte-cours {
-    transition: background-color 0.3s ease;
-  }
-  
-  .carte-cours:hover {
-    background-color: #a3d2e1; /* Couleur de fond au survol */
-  }
-  .carte-cours {
-    width: 100%; /* Utilise 100% pour occuper la largeur totale de son conteneur */
-    margin-bottom: 20px; /* Ajoute une marge en bas pour espacer les cartes */
-    box-sizing: border-box;
+/* Style pour le titre de chaque carte */
+.carte-cours h5 {
+  margin: 0;
+  font-size: 19px;
+  color: rgb(99, 137, 179);
+  font-weight: bold;
+}
+
+.carte-cours p {
+  font-size: 13px;
+}
+
+
+/* Style pour la durée de chaque cours */
+.carte-cours span {
+  display: block;
+  /* Pour que la durée apparaisse sur une nouvelle ligne */
+  margin-top: 10px;
+  color: #666;
+  /* Couleur de texte plus claire pour la durée */
+}
+
+.carte-cours {
+  transition: background-color 0.3s ease;
+}
+
+.carte-cours:hover {
+  background-color: #a3d2e1;
+  /* Couleur de fond au survol */
+}
+
+.carte-cours {
+  width: 100%;
+  /* Utilise 100% pour occuper la largeur totale de son conteneur */
+  margin-bottom: 20px;
+  /* Ajoute une marge en bas pour espacer les cartes */
+  box-sizing: border-box;
 }
 
 /* Ajoute ces styles pour créer un effet hover sur chaque carte */
 .carte-cours:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
