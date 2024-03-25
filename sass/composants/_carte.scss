@@ -1,13 +1,14 @@
 .destinations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 100px;
   padding: 5%;
 }
 
 .carte {
+
     flex: 0 0 calc(30% - 20px); /* Taille des cartes */
-    background-color: #fff;
+    background-color: #6699ff;
     border: 1px solid #eaeaea;
     border-radius: 8px;
     overflow: hidden;
@@ -23,7 +24,7 @@
     font-size: 18px;
     margin: 0;
     padding: 15px;
-    background-color: #f4f4f4;
+    background-color: #c5e0f7;
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -33,18 +34,23 @@
 }
 
 .carte a {
+    background-color: #6699ff;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 10px 10px;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin: 15px;
+    margin: 10px;
 }
 
 .carte a:hover {
     background-color: #0056b3;
 }
+.carte .lien-suite {
+    background-image: linear-gradient(120deg, rgba(165, 165, 165, 0.795), rgb(67, 73, 75));
+}
+
+
 .post-categories { // ul de la liste des catégories
     display: flex;
     list-style-type: none;

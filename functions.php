@@ -28,7 +28,3 @@ function _4w4_modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', '_4w4_modifie_requete_principal' );    
-function enqueue_custom_scripts() {
-    wp_enqueue_script('slide-script', get_template_directory_uri() . '/js/_slide.js', array('jquery'), '1.0', true);
-}
-add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');

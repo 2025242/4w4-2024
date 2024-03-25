@@ -281,7 +281,12 @@ body {
   color: var(--couleur-avant-footer);
 }
 
+#entete {
+  background-image: url("../image/imageEntete.png");
+}
+
 .entete__header {
+  background-image: url("../image/imageEntete.png");
   text-align: center;
   background-repeat: no-repeat;
   background-position: 100% 20%;
@@ -290,8 +295,8 @@ body {
 
 .cartes-cours {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
   /* Espace entre les cartes */
 }
 
@@ -361,13 +366,6 @@ h1 {
   text-shadow: 2px 2px 5px rgba(248, 105, 214, 0.913);
 }
 
-.carte-cours h5 .sigle {
-  font-size: 14px;
-  /* Ajuste la taille du sigle */
-  color: #4CAF50;
-  /* Change la couleur du sigle */
-}
-
 h2 {
   font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
   text-align: center;
@@ -390,7 +388,6 @@ h4 {
   font-weight: 400;
   margin-bottom: 100px;
   font-style: normal;
-  color: var(--couleur-avant-entete);
 }
 
 h5 {
@@ -398,7 +395,6 @@ h5 {
   font-weight: 300;
   font-style: italic;
   margin-bottom: 100px;
-  color: var(--couleur-avant-entete);
 }
 
 p {
@@ -526,13 +522,14 @@ button:hover {
 /* //////////////////////////////// */
 .destinations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 100px;
+  padding: 5%;
 }
 
 .carte {
   flex: 0 0 calc(30% - 20px); /* Taille des cartes */
-  background-color: #fff;
+  background-color: #6699ff;
   border: 1px solid #eaeaea;
   border-radius: 8px;
   overflow: hidden;
@@ -548,7 +545,7 @@ button:hover {
   font-size: 18px;
   margin: 0;
   padding: 15px;
-  background-color: #f4f4f4;
+  background-color: #c5e0f7;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -558,17 +555,21 @@ button:hover {
 }
 
 .carte a {
+  background-color: #6699ff;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 10px 10px;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  margin: 15px;
+  margin: 10px;
 }
 
 .carte a:hover {
   background-color: #0056b3;
+}
+
+.carte .lien-suite {
+  background-image: linear-gradient(120deg, rgba(165, 165, 165, 0.795), rgb(67, 73, 75));
 }
 
 .post-categories {

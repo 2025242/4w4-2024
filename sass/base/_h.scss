@@ -10,17 +10,10 @@ h1 {
 }
 
 
-.carte-cours h5 .sigle {
-    font-size: 14px;
-    /* Ajuste la taille du sigle */
-    color: #4CAF50;
-    /* Change la couleur du sigle */
-}
 
 h2 {
     font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
     text-align: center;
-    
     font-weight: 300;
     // text-align: center; 
     font-style: initial;
@@ -47,7 +40,7 @@ h4 {
     font-weight: 400;
     margin-bottom: 100px;
     font-style: normal;
-    color: var(--couleur-avant-entete);
+ 
 }
 
 h5 {
@@ -56,7 +49,7 @@ h5 {
     font-weight: 300;
     font-style: italic;
     margin-bottom: 100px;
-    color: var(--couleur-avant-entete);
+
 }
 
 p {
