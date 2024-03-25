@@ -15,7 +15,9 @@ Text Domain: theme salma
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import "variables";
+@import "utile/couleurs";
+/* Création des class de couleurs */
+@import "utile/couleurs-class";
 
 @import "layout";
 
@@ -25,10 +27,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Base */
 /* //////////////////////////////// */
 
+@import "base/h";
+
+@import "base/liens";
 
 @import "base/button";
-
-@import "base/h";
 
 /* //////////////////////////////// */
 /* Effet */
@@ -36,14 +39,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import "effet/vague";
 
-@import"effet/diagonal";
-///////////////////////////////////
-/// ///////////////////////////
-@import "footer";
+@import "effet/diagonal";
 
 /* //////////////////////////////// */
 /* Composants */
-/* ////////////////////////////////*/
+/* //////////////////////////////// */
 
-@import "composants/cours";
+@import "composants/carte";
 @import "composants/menu";
+@import "js/slide"; 

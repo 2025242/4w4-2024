@@ -13,9 +13,11 @@
 </head>
 
 <body>
-    <div id="menu__entete" class="global">
+    <div id="menu__entete" class="global clr-agencement-primaire">
         <header class="menu__header">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="Logo" class="logo">
+            <a href="http://127.0.0.1:8080/4w4salma/">
+         <img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="Logo" class="logo">
+            </a>
             <h1>Thème WordPress de Salma</h1>
             <input type="checkbox" name="" id="chk_burger">
             <label id="burger" for="chk_burger">
