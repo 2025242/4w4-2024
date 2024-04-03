@@ -199,10 +199,47 @@ Ce map contient un map principal et plusieurs sous-map */
   background-color: hsl(70, 100%, 15%);
 }
 
+.clr-mauve-100 {
+  color: hsl(279, 63%, 84%);
+}
+
+.bck-mauve-100 {
+  background-color: hsl(279, 63%, 84%);
+}
+
+.clr-mauve-200 {
+  color: hsl(253, 49%, 70%);
+}
+
+.bck-mauve-200 {
+  background-color: hsl(253, 49%, 70%);
+}
+
+.clr-mauve-300 {
+  color: hsl(253, 49%, 50%);
+}
+
+.bck-mauve-300 {
+  background-color: hsl(253, 49%, 50%);
+}
+
+.clr-mauve-400 {
+  color: hsl(251, 66%, 50%);
+}
+
+.bck-mauve-400 {
+  background-color: hsl(251, 66%, 50%);
+}
+
 /* mixin pour agencer des couleurs */
 .clr-agencement-primaire {
   color: hsl(220, 100%, 85%);
   background-image: linear-gradient(90deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-mauve {
+  color: hsl(279, 63%, 84%);
+  background-image: linear-gradient(90deg, hsl(251, 66%, 50%), hsl(253, 49%, 70%));
 }
 
 .clr-agencement-secondaire {

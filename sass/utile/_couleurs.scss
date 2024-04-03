@@ -9,6 +9,12 @@ $--clr-bleu-leger  : hsl(220, 100%, 60%);
 $--clr-bleu-moyen  : hsl(220, 100%, 30%);    
 $--clr-bleu-fonce  : hsl(220, 100%, 15%);
 
+$--clr-mauve-pale    : hsl(279, 63%, 84%);
+$--clr-mauve-leger  : hsl(253, 49%, 70%);
+$--clr-mauve-moyen  : hsl(253, 49%, 50%);    
+$--clr-mauve-fonce  : hsl(251, 66%, 50%);
+
+
 
 $--clr-orange-pale: hsl(40, 100%, 85%);
 $--clr-orange-leger  : hsl(40, 100%, 50%);
@@ -53,7 +59,13 @@ $defaut: (
         200: $--clr-vert-leger,
         300: $--clr-vert-moyen,
         400: $--clr-vert-fonce
-    )
+    ),
+        mauve : (
+        100: $--clr-mauve-pale,
+        200: $--clr-mauve-leger,
+        300: $--clr-mauve-moyen,
+        400: $--clr-mauve-fonce
+    ),
 );
 
 
@@ -61,6 +73,7 @@ $defaut: (
 
 $agencement-couleur :(
     primaire: ($--clr-bleu-pale, ($--clr-bleu-fonce, $--clr-bleu-leger)),
+    mauve : ($--clr-mauve-pale, ($--clr-mauve-fonce, $--clr-mauve-leger)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
     vert: ($--clr-vert-fonce, $--clr-vert-pale)
