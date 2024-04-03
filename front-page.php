@@ -3,11 +3,18 @@
     
 <div id="entete" class="global">
     <section class="entete__header">
+            <section>
+     <div class="banniere">
+        <p>Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant  Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant</p>
+    </div>
+    </section><br>
+     
         <h1><?php echo get_bloginfo("name") ?></h1>
-        <h2><?php echo get_bloginfo("description") ?></h2>
+        <h2><?php echo get_bloginfo("description") ?></h2><br><br><br>
         <h3>Découvrez des destinations uniques, créez des souvenirs inoubliables</h3>
-        <button>Destination Populaire</button>
+        
     </section>
+    
     <?php get_template_part("gabarits/vague"); ?>
 </div>
     <div id="accueil" class="global">

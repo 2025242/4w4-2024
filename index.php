@@ -19,52 +19,7 @@
 
     <section>
       <h2>Acceuil (h2)</h2>
-      <section>
-        <div class="titreCour">Cours</div>
-        <div class="cartes-cours">
-          <?php
-          // Récupère les articles de type "post" (cours)
-          $args = array(
-            'post_type' => 'post',
-            'posts_per_page' => -1,
-          );
-
-          $cours_query = new WP_Query($args);
-
-          if ($cours_query->have_posts()) {
-            while ($cours_query->have_posts()) {
-              $cours_query->the_post();
-
-              // Récupère le titre
-              $titre_cours = get_the_title();
-
-              // Trouve la durée dans le titre (assumant que la durée est entre parenthèses)
-              preg_match('/\((.*?)\)/', $titre_cours, $matches);
-              $duree_cours = isset($matches[1]) ? $matches[1] : '';
-
-              // Trouve le sigle du cours
-              preg_match('/^([\dA-Z-]+)\s/', $titre_cours, $sigle_matches);
-              $sigle_cours = isset($sigle_matches[1]) ? $sigle_matches[1] : '';
-
-              // Supprime la durée et le sigle du titre
-              $titre_cours_sans_duree_sigle = trim(str_replace(array("($duree_cours)", "$sigle_cours"), '', $titre_cours));
-
-              // Affiche la carte du cours
-              echo '<div class="carte-cours">';
-              echo '<h5>' . esc_html($sigle_cours) . '<br>' . esc_html($titre_cours_sans_duree_sigle) . '</h5>';
-              echo '<p>' . esc_html(wp_trim_words(get_the_content(), 20)) . '</p>';
-              echo '<span>Durée : ' . esc_html($duree_cours) . '</span>';
-              echo '</div>';
-            }
-            wp_reset_postdata(); // Réinitialise la requête post
-          } else {
-            echo '<p>Aucun cours trouvé.</p>';
-          }
-          ?>
-        </div>
-
-  </div>
-  </section>
+   
 </div>
 <div id="evenement" class="global diagonal">
   <section>
@@ -122,6 +77,8 @@
     <div class="footer-bottom">
       <p>&copy; 2024 College Maisonneuve. Tous droits réservés.</p>
     </div>
+
+</footer>
     </body>
 
     </html>

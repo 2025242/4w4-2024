@@ -1,9 +1,40 @@
 #entete{
-  background-image: url('../image/imageEntete.png'); 
+  background-image: url('image/plage.gif'); 
+  background-repeat: no-repeat;
+     background-size: cover; /* Pour que l'image couvre toute la section */
+    background-position: center; 
+}
+/* Styles pour la bannière */
+
+
+.banniere {
+   position: absolute; /* Position absolue par rapport à son premier parent positionné */
+    top: 0; /* Coller la bannière en haut de la section entete__header */
+    left: 0; /* Aligner la bannière à gauche de la section entete__header */
+    width: 100%; /* Prendre la largeur de la section entete__header */
+    z-index: 1;
+    background-color: #561dce6b; /* Couleur de fond de la bannière */
+    color: #fff; /* Couleur du texte */
+    padding: 20px 0; /* Espacement intérieur de la bannière */
+    overflow: hidden; /* Pour masquer le texte dépassant de la bannière */
+    white-space: nowrap; /* Pour empêcher le texte de se diviser sur plusieurs lignes */
+}
+.banniere p {
+    animation: defilement 38s linear infinite; /* Animation de défilement du texte */
+    margin: 0; /* Supprimer les marges du paragraphe */ 
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateX(100%); /* Déplacer le texte complètement hors de la vue à droite */
+    }
+    100% {
+        transform: translateX(-100%); /* Déplacer le texte complètement hors de la vue à gauche */
+    }
 }
 
 .entete__header{
-  background-image: url('../image/imageEntete.png'); 
+  
   text-align: center; 
   background-repeat: no-repeat;
   background-position: 100% 20%;

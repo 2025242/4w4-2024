@@ -282,11 +282,40 @@ body {
 }
 
 #entete {
-  background-image: url("../image/imageEntete.png");
+  background-image: url("image/plage.gif");
+  background-repeat: no-repeat;
+  background-size: cover; /* Pour que l'image couvre toute la section */
+  background-position: center;
 }
 
+/* Styles pour la bannière */
+.banniere {
+  position: absolute; /* Position absolue par rapport à son premier parent positionné */
+  top: 0; /* Coller la bannière en haut de la section entete__header */
+  left: 0; /* Aligner la bannière à gauche de la section entete__header */
+  width: 100%; /* Prendre la largeur de la section entete__header */
+  z-index: 1;
+  background-color: rgba(86, 29, 206, 0.4196078431); /* Couleur de fond de la bannière */
+  color: #fff; /* Couleur du texte */
+  padding: 20px 0; /* Espacement intérieur de la bannière */
+  overflow: hidden; /* Pour masquer le texte dépassant de la bannière */
+  white-space: nowrap; /* Pour empêcher le texte de se diviser sur plusieurs lignes */
+}
+
+.banniere p {
+  animation: defilement 38s linear infinite; /* Animation de défilement du texte */
+  margin: 0; /* Supprimer les marges du paragraphe */
+}
+
+@keyframes defilement {
+  0% {
+    transform: translateX(100%); /* Déplacer le texte complètement hors de la vue à droite */
+  }
+  100% {
+    transform: translateX(-100%); /* Déplacer le texte complètement hors de la vue à gauche */
+  }
+}
 .entete__header {
-  background-image: url("../image/imageEntete.png");
   text-align: center;
   background-repeat: no-repeat;
   background-position: 100% 20%;
@@ -358,7 +387,7 @@ body {
 h1 {
   text-align: center;
   font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
-  color: rgda(255, 255, 255, 0.5);
+  color: rgba(240, 240, 240, 0.959);
   font-weight: 300;
   font-style: normal;
   margin: 0;
@@ -378,6 +407,7 @@ h2 {
 h3 {
   font-size: clamp(1rem, -2rem + 12.5vw, 2rem);
   text-align: center;
+  color: rgb(255, 255, 255);
   font-weight: 300;
   font-style: oblique;
   padding: 20px;
@@ -425,8 +455,7 @@ button {
   width: 40%;
   font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
   padding: 7px 15px;
-  background-image: linear-gradient(120deg, rgba(69, 148, 221, 0.795), rgb(151, 214, 233));
-  color: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -435,8 +464,8 @@ button {
 }
 
 button:hover {
-  background-color: #1db618;
-  color: #2c3e50;
+  background-color: #d9c9f3;
+  color: #000000;
 }
 
 /* //////////////////////////////// */
@@ -583,19 +612,17 @@ button:hover {
   z-index: 2;
   transform: translateX(-120%);
   transition: transform 0.3s ease-in-out;
-  background-color: rgba(162, 225, 244, 0.7294117647);
   padding: 2.5%;
 }
 @media (min-width: 700px) {
   .menu-principal-container {
     position: static;
     transform: translateX(0);
-    background-color: var(--couleur-arriere-accueil);
   }
 }
 
 .menu__header {
-  background-color: var(--couleur-arriere-accueil);
+  background: linear-gradient(to bottom, #e0b7d9, #2752ca);
 }
 
 .menu {
@@ -616,7 +643,6 @@ button:hover {
 }
 
 .menu-item a {
-  background-image: linear-gradient(120deg, rgba(69, 148, 221, 0.795), rgb(151, 214, 233));
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -629,7 +655,7 @@ button:hover {
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -652,7 +678,7 @@ button:hover {
 
 /* Effet de bordure au survol */
 .menu a:hover {
-  background-color: #1db618;
+  background-color: #d9c9f3;
   color: #2c3e50;
 }
 
@@ -664,7 +690,6 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--couleur-arriere-accueil);
   padding: 15px;
 }
 
