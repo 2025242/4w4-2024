@@ -19,7 +19,7 @@
 </div>
     <div id="accueil" class="global">
         <section>
-            <h2>Accueil (h2)</h2>
+            <h2>Destination Populaire</h2>
             <div class="destinations">
             <?php if (have_posts()):
                 while(have_posts()): the_post(); ?>

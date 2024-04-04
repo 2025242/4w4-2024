@@ -9,7 +9,8 @@
 <div id="footer" class="global">
 
  <footer>
-    <h5>Footer(h5)</h5><br>
+
+    
     <div class="footer-content">
       <div class="footer-section about">
         <h2>À propos de nous</h2>
@@ -28,9 +29,6 @@
         <h2>Liens rapides</h2>
         <ul>
           <li><a href="#">Accueil</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Produits</a></li>
-          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -38,10 +36,10 @@
     <div class="footer-bottom">
       <p>&copy; 2024 College Maisonneuve. Tous droits réservés.</p>
     </div>
-    <?php wp_nav_menu(array(
+    
+<h5 class = "menufooter"><?php wp_nav_menu(array(
                 "menu"=> "footer",  
-                "container" => "nav")); ?>
-
+                "container" => "nav")); ?></h5>
 </footer>
 
 </div>

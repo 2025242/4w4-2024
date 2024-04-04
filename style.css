@@ -418,6 +418,55 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.menufooter {
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%; /* Ajustez la largeur des sections selon vos besoins */
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  color: var(--couleur-avant-entete);
+  font-size: 2rem;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer-section ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+}
+
+/* Style pour les liens au survol */
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
 /* //////////////////////////////// */
 /* Base */
 /* //////////////////////////////// */
@@ -588,8 +637,8 @@ button:hover {
 /* //////////////////////////////// */
 .destinations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
   padding: 5%;
 }
 
@@ -736,6 +785,36 @@ button:hover {
   margin-right: 10px;
 }
 
-/**input {
+.checkbox {
   display: none;
-}**//*# sourceMappingURL=style.css.map */
+}
+
+/* Styles pour le formulaire de recherche */
+.search-form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-form input[type=search] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 18px;
+  width: 3px;
+  max-width: 100%;
+}
+
+.search-form input[type=submit] {
+  background-color: #3665d4;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form input[type=submit]:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=style.css.map */

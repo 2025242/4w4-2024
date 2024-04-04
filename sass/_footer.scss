@@ -1,7 +1,7 @@
-footer {
-    
+.menufooter {
+    text-align: center;
     color: #fff;
-    padding: 20px 0;
+  
 }
 
 .footer-content {
@@ -23,21 +23,23 @@ font-size: 2rem;
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .footer-section ul {
     list-style: none;
-    padding: 0;
+    text-align: center;
 }
 
 .footer-section a {
     color: #fff;
     text-decoration: none;
+    text-align: center;
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     border-top: 1px solid #555;
 }
 
