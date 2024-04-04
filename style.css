@@ -200,35 +200,35 @@ Ce map contient un map principal et plusieurs sous-map */
 }
 
 .clr-mauve-100 {
-  color: hsl(279, 63%, 84%);
+  color: hsl(305, 71%, 86%);
 }
 
 .bck-mauve-100 {
-  background-color: hsl(279, 63%, 84%);
+  background-color: hsl(305, 71%, 86%);
 }
 
 .clr-mauve-200 {
-  color: hsl(253, 49%, 70%);
+  color: hsl(243, 49%, 70%);
 }
 
 .bck-mauve-200 {
-  background-color: hsl(253, 49%, 70%);
+  background-color: hsl(243, 49%, 70%);
 }
 
 .clr-mauve-300 {
-  color: hsl(253, 49%, 50%);
+  color: hsl(233, 49%, 50%);
 }
 
 .bck-mauve-300 {
-  background-color: hsl(253, 49%, 50%);
+  background-color: hsl(233, 49%, 50%);
 }
 
 .clr-mauve-400 {
-  color: hsl(251, 66%, 50%);
+  color: hsl(221, 66%, 50%);
 }
 
 .bck-mauve-400 {
-  background-color: hsl(251, 66%, 50%);
+  background-color: hsl(221, 66%, 50%);
 }
 
 /* mixin pour agencer des couleurs */
@@ -238,8 +238,8 @@ Ce map contient un map principal et plusieurs sous-map */
 }
 
 .clr-agencement-mauve {
-  color: hsl(279, 63%, 84%);
-  background-image: linear-gradient(90deg, hsl(251, 66%, 50%), hsl(253, 49%, 70%));
+  color: hsl(305, 71%, 86%);
+  background-image: linear-gradient(90deg, hsl(221, 66%, 50%), hsl(243, 49%, 70%));
 }
 
 .clr-agencement-secondaire {
@@ -618,6 +618,7 @@ button:hover {
 .carte p {
   padding: 15px;
   margin: 0;
+  background-color: #6699ff;
 }
 
 .carte a {
@@ -658,10 +659,9 @@ button:hover {
   }
 }
 
-.menu__header {
-  background: linear-gradient(to bottom, #e0b7d9, #2752ca);
-}
-
+/**.menu__header {
+  background: linear-gradient(to bottom, #e0b7d9, #2752ca)
+}**/
 .menu {
   display: flex;
   list-style-type: none;
@@ -736,6 +736,6 @@ button:hover {
   margin-right: 10px;
 }
 
-input {
+/**input {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}**//*# sourceMappingURL=style.css.map */

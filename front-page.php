@@ -56,7 +56,27 @@ En définitive, voyager, c'est bien plus que parcourir des kilomètres sur une c
     </div>
     <div id="galerie" class="global">
         <section>
-            <h2>Galerie (h2)</h2>
+            <h2>les destination par catégorie</h2>
+            <article class = "destinations">
+            <?php
+            $categories = get_categories();
+            foreach ($categories as $elm_categorie){
+                $nom = $elm_categorie->name;
+                $description = wp_trim_words ($elm_categorie-> description, 15);
+                $nombre_destination = $elm_categorie-> count;
+                $categorie_url = get_category_link($elm_categorie->term_id)
+?>
+            <div  class = "carte">
+                    <h3> <?php echo $nom;?><h3>
+                    <p>  <?php echo $description;?> </p>
+                    <p> Nombre de destination: <?php echo  $nombre_destination; ?> </p>
+                    <a href = "<?php echo $categorie_url ?>"> Voir la destination </a>
+
+            </div>
+
+           <?php }?>
+            
+            </article>
         </section>
   <?php  get_template_part('gabarits/vague'); ?>
     </div>
