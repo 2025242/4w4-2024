@@ -5,7 +5,7 @@
     <section class="entete__header">
             <section>
      <div class="banniere">
-        <p>Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant  Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant Commence ton aventure maintenant</p>
+        <p>Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir</p>
     </div>
     </section><br>
      

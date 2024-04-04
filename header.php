@@ -26,12 +26,12 @@
                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                 </svg>
             </label>
-            <header class="menu__header">
+           
             <?php wp_nav_menu(array(
                 "menu"=> "principal",  
                 "container" => "nav")); ?>
-
         </header>
+        
 <?php get_template_part("banniere"); ?>
     
     </div>

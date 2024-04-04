@@ -493,8 +493,8 @@ h2 {
 h3 {
   font-size: clamp(1rem, -2rem + 12.5vw, 2rem);
   text-align: center;
-  color: rgb(255, 255, 255);
-  font-weight: 300;
+  color: rgb(0, 0, 0);
+  font-weight: 5 0;
   font-style: oblique;
   padding: 20px;
 }
@@ -729,7 +729,8 @@ button:hover {
 }
 
 .menu-item a {
-  color: #ffffff;
+  background-color: #d5bbe4;
+  color: #5472d5;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -789,6 +790,9 @@ button:hover {
   display: none;
 }
 
+/* //////////////////////////////// */
+/* Bare de recherche*/
+/* //////////////////////////////// */
 /* Styles pour le formulaire de recherche */
 .search-form {
   margin: 0 auto;

@@ -1,6 +1,6 @@
 .menu-principal-container {
   //nav
-  // background-color: black;
+   
   position: absolute;
   z-index: 2;
   transform: translateX(-120%);
@@ -8,6 +8,7 @@
   padding: 2.5%;
 
   @media (min-width: 700px) {
+    
     position: static;
     transform: translateX(0);
   }
@@ -38,8 +39,8 @@
 }
 //article individuelle du menu
 .menu-item a {
-
-  color: #ffffff;
+background-color: #d5bbe4;
+  color: #5472d5;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -97,7 +98,6 @@
   height: auto;
   margin-right: 10px;
 }
-
 .checkbox {
   display: none;
 }
