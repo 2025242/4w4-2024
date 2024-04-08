@@ -72,7 +72,7 @@
     </div>
     <div id="evenement" class="global diagonal">
         <section>
-            <h2>Événement (h2)</h2>
+            <h2> Le voyage</h2>
             <p>Les voyages, ces périples qui nous emportent loin de nos habitudes et nous plongent dans l'inconnu, sont une aventure à part entière. Ils offrent un éventail infini de découvertes, de rencontres et d'expériences qui enrichissent nos vies de manière inestimable.
 
 Partir en voyage, c'est s'ouvrir à de nouveaux horizons, tant géographiques que culturels. C'est explorer des contrées lointaines où chaque paysage raconte une histoire, où chaque ville exhale un parfum unique, où chaque rue résonne des échos du passé et du présent entremêlés.
