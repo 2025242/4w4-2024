@@ -479,11 +479,12 @@ h1 {
   font-style: normal;
   margin: 0;
   padding: 20px;
-  text-shadow: 2px 2px 5px rgba(248, 105, 214, 0.913);
+  text-shadow: 2px 2px 5px rgba(247, 45, 200, 0.913);
 }
 
 h2 {
   font-family: "Caveat";
+  text-shadow: 0 0 10px rgb(241, 117, 241);
   font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
   text-align: center;
   font-weight: 300;
