@@ -30,11 +30,12 @@
                         <div class='main'>
                             <?php
                         // Récupérer le contenu de l'article
+
                         $content = get_the_content();
 
                         // Utiliser une expression régulière pour extraire l'URL de l'image
                         preg_match('/<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*>/i', $content, $matches);
-                        
+                        the_post_thumbnail( 'thumbnail' ); 
                         // Vérifier si une image a été trouvée dans le contenu
                         if (!empty($matches[1])) {
                             $image_url = $matches[1];
