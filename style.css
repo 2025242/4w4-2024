@@ -22,6 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 on un mapping en catégorisant les différentes couleurs,
 Ce map contient un map principal et plusieurs sous-map */
 /* Agencement de couleurs */
+@import url("https://fonts.google.com/specimen/Libre+Caslon+Text");
 :root {
   /* Calcul des teintes) */
   --u1: 220;
@@ -482,6 +483,7 @@ h1 {
 }
 
 h2 {
+  font-family: "Caveat";
   font-size: clamp(0.5rem, -1rem + 7.333vw, 2rem);
   text-align: center;
   font-weight: 300;
