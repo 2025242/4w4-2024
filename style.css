@@ -912,7 +912,7 @@ code {
 
 /* Effet de bordure au survol */
 .menu a:hover {
-  background-color: #d9c9f3;
+  background-color: #b495e6;
   color: #2c3e50;
 }
 
@@ -946,6 +946,10 @@ code {
   text-align: center;
 }
 
+.screen-reader-text {
+  font-size: 23px; /* Définissez la taille de la police selon vos préférences */
+}
+
 .search-form input[type=search] {
   padding: 10px;
   border: 2px solid #ccc;
@@ -958,6 +962,34 @@ code {
 #s {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+#searchsubmit {
+  /* Supprimez le texte du bouton pour qu'il soit invisible */
+  text-indent: -9999px;
+  /* Définissez une largeur et une hauteur pour le bouton image */
+  width: 50px; /* Ajustez la largeur selon vos besoins */
+  height: 30px; /* Ajustez la hauteur selon vos besoins */
+  /* Définissez l'image de fond pour le bouton */
+  background-image: url("image/rechercher.png"); /* Remplacez par le chemin de votre image */
+  /* Assurez-vous que l'image de fond est affichée correctement */
+  background-size: cover;
+  background-position: center;
+  /* Supprimez la bordure du bouton */
+  border: none;
+  /* Définissez le curseur au survol */
+  cursor: pointer;
+  /* Optionnel : ajoutez une marge autour du bouton */
+  margin-right: 10px; /* Ajustez selon vos besoins */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+  transition: all 0.3s ease; /* Ajouter une transition animée */
+  background-color: #3665d4;
+  padding: 5px 10px; /* Espace à l'intérieur du bouton/image */
+}
+
+#searchsubmit:hover {
+  background-color: #768fca; /* Changer la couleur de fond au survol */
+  transform: translateY(-2px); /* Ajouter un léger effet de translation */
 }
 
 .search-form input[type=submit] {
