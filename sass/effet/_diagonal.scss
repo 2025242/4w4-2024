@@ -13,20 +13,20 @@
     top: 0;
     bottom: 0;
     background-color: var(--couleur-avant-galerie);
-    box-shadow: 0 0 50px rgba(232, 74, 238, 0.7);
+    //box-shadow: 0 0 50px rgba(232, 74, 238, 0.7);
     z-index: -1;
     transform:skewY(-5deg) ;
     animation: pulseAnimation 2s infinite;
 }
 @keyframes pulseAnimation {
     0% {
-        box-shadow: 0 0 10px 5px rgba(240, 65, 208, 0.951);
+        box-shadow: 0 0 10px 5px rgba(245, 190, 250, 0.951);
     }
     50% {
-        box-shadow: 0 0 20px 10px rgba(157, 31, 167, 0.741);
+        box-shadow: 0 0 20px 10px rgba(235, 190, 250, 0.951);
     }
     100% {
-        box-shadow: 0 0 10px 5px rgba(224, 40, 212, 0.954);
+        box-shadow: 0 0 10px 5px rgba(225, 190, 250, 0.951);
     }
 }
 

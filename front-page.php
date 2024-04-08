@@ -5,7 +5,7 @@
     <section class="entete__header">
             <section>
      <div class="banniere">
-        <p>Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir</p>
+        <p>Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir ! Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir ! Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir ! Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir !</p>
     </div>
     </section><br>
      
@@ -90,7 +90,7 @@ En définitive, voyager, c'est bien plus que parcourir des kilomètres sur une c
     </div>
     <div id="galerie" class="global">
         <section>
-            <h2>les destination par catégorie</h2>
+            <h2>les destinations par catégorie</h2>
             <article class = "destination">
             <?php
             $categories = get_categories();
