@@ -21,7 +21,7 @@
 
     <div id="galerie" class="global">
         <section>
-            <h2>Galerie (h2)</h2>
+           
         </section>
   <?php  get_template_part('gabarits/vague'); ?>
     </div>
