@@ -6,6 +6,9 @@
                 <div class="carte">
                     <h2><?php the_title() ?></h2>  
                     <p><?php the_content(); ?> </p>
+                 <div class="image-container">
+                    <?php the_post_thumbnail('large')?>
+                </div>
                 </div> 
             <?php endif; ?>
             </div>
