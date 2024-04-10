@@ -19,10 +19,4 @@
         </section>
     </div>
 
-    <div id="galerie" class="global">
-        <section>
-           
-        </section>
-  <?php  get_template_part('gabarits/vague'); ?>
-    </div>
-<?php get_footer(); ?>
+   <?php get_footer(); ?>
