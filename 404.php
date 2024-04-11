@@ -23,8 +23,6 @@
     }
     ?>
 </ul>
-	
-
     </section>
     <?php get_template_part("gabarits/vague"); ?>
 

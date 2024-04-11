@@ -29,7 +29,7 @@ h2 {
 
 
 h3 {
-    font-size: clamp(1rem, -2rem + 12.5vw, 2rem);
+    font-size: clamp(1rem, -2rem + 12.5vw, 1.5rem);
     text-align: center;
     color: rgb(240, 240, 240);
     font-weight: 5  00;
@@ -44,13 +44,13 @@ h4 {
     // color:rgba(18, 83, 130, 0.4);
     font-weight: 400;
     margin-bottom: 100px;
-       font-style: italic;
     font-style: normal;
  
 }
 
 
 h5 {
+ 
   font-size: 1.5rem; /* Taille de police */
   font-weight: 400; /* Épaisseur du texte */
   text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
