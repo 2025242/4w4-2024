@@ -103,3 +103,18 @@
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
+.lien {
+  background-color: #3665d4;
+  display: inline-block; /* Pour permettre l'utilisation de padding et de border-radius */
+  padding: 10px 20px; 
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+.lien:hover {
+  /* Styles à appliquer lorsque le lien est survolé */
+  text-decoration: underline; /* Soulignement au survol */
+}
+h3 a{
+    text-decoration: none;
+}

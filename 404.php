@@ -4,12 +4,10 @@
   <div id="entete" class="global">
     <section class="entete__header">
      <h2>Erreur 404</h2><br><br><br>
-     <h3>Vous essayer d'acceder a une page qui n'existe pas</h3>
-     <h3>Pour revenir a la page d'acceuil cliquer sur le lien suivant</h3>
-     
-     <a class = "lienRetoure" href=" <?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name');?> </a>
-      <div  class = "search-form"><?php get_search_form()?></div>
-  
+     <h5>Vous essayer d'acceder a une page qui n'existe pas <br>Pour revenir a la page d'acceuil cliquer sur le lien suivant</h5><br>
+     <h3 class="lien"><a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name');?></a></h3>
+    <div  class = "search-form"><?php get_search_form()?></div>
+ 
 	
 
     </section>
