@@ -3,7 +3,7 @@
 ## Auteur
 Salma Bourakkadi
 ##	Lien vers votre site sur l’hébergeur « WHC »
-[Lien vers la GitHub Page](https://gftnth00.mywhc.ca/tim11/)
+[Lien vers l’hébergeur « WHC »](https://gftnth00.mywhc.ca/tim11/)
 
 ## GitHub Page
 [Lien vers la GitHub Page](https://2025242.github.io/4w4-2024/)
