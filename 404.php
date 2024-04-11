@@ -7,7 +7,14 @@
      <h5>Vous essayer d'acceder a une page qui n'existe pas <br>Pour revenir a la page d'acceuil cliquer sur le lien suivant</h5><br>
      <h3 class="lien"><a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name');?></a></h3>
     <div  class = "search-form"><?php get_search_form()?></div>
- 
+    <ul class="categories-list">
+    <?php
+    $categories = get_categories();
+    foreach ($categories as $category) {
+        echo '<a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+    }
+    ?>
+</ul>
 	
 
     </section>
@@ -51,11 +58,13 @@
         </ul>
       </div>
     </div>
-
+ <div  class = "search-form"><?php get_search_form()?></div>
     <div class="footer-bottom">
       <p>&copy; 2024 College Maisonneuve. Tous droits réservés.</p>
     </div>
-
+ <h4 class = "menufooter"><?php wp_nav_menu(array(
+                "menu"=> "footer",  
+                "container" => "nav")); ?></h4>
 </footer>
     </body>
 

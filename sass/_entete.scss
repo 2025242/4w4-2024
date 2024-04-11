@@ -118,3 +118,15 @@
 h3 a{
     text-decoration: none;
 }
+
+.categories-list {
+    display: flex; /* Pour aligner horizontalement les éléments */
+    justify-content: center;
+    padding: 5%;
+}
+
+.categories-list a {
+ padding: 1%;
+    color: #ffffff; /* Couleur du texte */
+    //margin-right: 10px; /* Espacement entre les liens */
+}

@@ -52,6 +52,7 @@ h4 {
 h5 {
   font-size: 2rem; /* Taille de police */
   font-weight: 400; /* Épaisseur du texte */
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
   background-color: rgba(122, 17, 122, 0.562); /* Couleur de fond */
   display: inline-block; /* Permet l'utilisation de padding et de border-radius */
   padding: 1em 2em; /* Ajoute de l'espace autour du texte */

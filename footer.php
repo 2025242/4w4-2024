@@ -43,9 +43,9 @@
       <p>&copy; 2024 College Maisonneuve. Tous droits réservés.</p>
     </div>
     
-<h5 class = "menufooter"><?php wp_nav_menu(array(
+<h4 class = "menufooter"><?php wp_nav_menu(array(
                 "menu"=> "footer",  
-                "container" => "nav")); ?></h5>
+                "container" => "nav")); ?></h4>
 </footer>
 
 </div>
