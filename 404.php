@@ -3,11 +3,14 @@
 <div>
   <div id="entete" class="global">
     <section class="entete__header">
-     <h2>Erreur 404</h1><br><br><br>
+     <h2>Erreur 404</h2><br><br><br>
      <h3>Vous essayer d'acceder a une page qui n'existe pas</h3>
-     <h2> <?php echo get_bloginfo('name'); ?></h2> 
-     <h1><?php echo get_bloginfo('url');  ?></h1>
-   <a href=" <?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name');?> </a>
+     <h3>Pour revenir a la page d'acceuil cliquer sur le lien suivant</h3>
+     
+     <a class = "lienRetoure" href=" <?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name');?> </a>
+      <div  class = "search-form"><?php get_search_form()?></div>
+  
+	
 
     </section>
     <?php get_template_part("gabarits/vague"); ?>
