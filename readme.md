@@ -1,11 +1,13 @@
-# TP2 - Explorez l'Inconnu : Votre Aventure Commence Ici
+# TP2 - Explorez l'Inconnu 
 
-
-## GitHub Page
-
-[Lien vers la GitHub Page](https://2025242.github.io/4w4-2024/)
 ## Auteur
 Salma Bourakkadi
+##	Lien vers votre site sur l’hébergeur « WHC »
+[Lien vers la GitHub Page](https://gftnth00.mywhc.ca/tim11/)
+
+## GitHub Page
+[Lien vers la GitHub Page](https://2025242.github.io/4w4-2024/)
+
 
 ### Amélioration de la page d'accueil (front-page.php) (1 point)
 
