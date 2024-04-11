@@ -3,10 +3,18 @@
 <div>
   <div id="entete" class="global">
     <section class="entete__header">
-     <h2>Erreur 404</h2><br><br><br>
-     <h5>Vous essayer d'acceder a une page qui n'existe pas <br>Pour revenir a la page d'acceuil cliquer sur le lien suivant</h5><br>
-     <h3 class="lien"><a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name');?></a></h3>
-    <div  class = "search-form"><?php get_search_form()?></div>
+<div class="container404">
+    <div class="fond404">
+        <h2>Erreur 404</h2><br><br><br>
+        <h5>Vous essayez d'accéder à une page qui n'existe pas.<br>Pour revenir à la page d'accueil, cliquez sur le lien suivant :</h5><br>
+        <h3 class="lien"><a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name');?></a></h3><br><br>
+        <div class="search-form"><?php get_search_form()?></div>
+    </div> 
+
+    <div class="image-Logo">
+        <img src="http://127.0.0.1:8080/4w4salma/wp-content/uploads/2024/04/logo.png" alt="Description de l'image">
+    </div>
+</div>
     <ul class="categories-list">
     <?php
     $categories = get_categories();

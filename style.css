@@ -422,13 +422,13 @@ body {
 .lien {
   background-color: #3665d4;
   display: inline-block; /* Pour permettre l'utilisation de padding et de border-radius */
-  padding: 10px 20px;
+  padding: 5px 10px;
   font-weight: bold;
   text-decoration: none;
 }
 
 .lien:hover {
-  /* Styles à appliquer lorsque le lien est survolé */
+  transform: translateY(-5px);
   text-decoration: underline; /* Soulignement au survol */
 }
 
@@ -447,6 +447,28 @@ h3 a {
   color: #ffffff; /* Couleur du texte */
 }
 
+.container404 {
+  display: flex; /* Utiliser Flexbox pour le positionnement */
+  background-color: rgba(122, 17, 122, 0.562); /* Couleur de fond */
+  padding: 2em 6em;
+  border-radius: 50px;
+}
+
+.fond404 {
+  flex: 1; /* Utiliser tout l'espace disponible */
+  padding-right: 20px; /* Espacement entre les deux div */
+}
+
+.image-Logo {
+  flex: 1; /* Utiliser tout l'espace disponible */
+}
+
+/* Media query pour masquer l'image sur les petits écrans */
+@media screen and (max-width: 768px) {
+  .image-Logo {
+    display: none; /* Masquer l'image sur les écrans de petite taille */
+  }
+}
 .menufooter {
   text-align: center;
   color: #fff;
@@ -539,12 +561,9 @@ h4 {
 }
 
 h5 {
-  font-size: 2rem; /* Taille de police */
+  font-size: 1.5rem; /* Taille de police */
   font-weight: 400; /* Épaisseur du texte */
   text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
-  background-color: rgba(122, 17, 122, 0.562); /* Couleur de fond */
-  display: inline-block; /* Permet l'utilisation de padding et de border-radius */
-  padding: 1em 2em; /* Ajoute de l'espace autour du texte */
   margin-bottom: 2em; /* Marge en bas */
 }
 
