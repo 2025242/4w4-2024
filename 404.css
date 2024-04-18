@@ -1,59 +1,63 @@
 @charset "UTF-8";
-.lien {
-  background-color: #3665d4;
-  display: inline-block; /* Pour permettre l'utilisation de padding et de border-radius */
+/* Styles pour les liens */
+.link {
+  display: inline-block;
   padding: 5px 10px;
   font-weight: bold;
   text-decoration: none;
+  background-color: #3665d4;
+  color: #ffffff;
 }
 
-.lien:hover {
+.link:hover {
   transform: translateY(-5px);
-  text-decoration: underline; /* Soulignement au survol */
+  text-decoration: underline;
 }
 
+/* Styles pour les liens dans les titres */
 h3 a {
   text-decoration: none;
 }
 
+/* Styles pour la liste des catégories */
 .categories-list {
-  display: flex; /* Pour aligner horizontalement les éléments */
-  justify-content: center; /* Pour centrer les éléments horizontalement */
-  padding: 5%; /* Ajoute un espacement autour de la liste des catégories */
+  display: flex;
+  justify-content: center;
+  padding: 5%;
 }
 
-/* Media query pour les écrans de petite taille (mobiles) */
+/* Media query pour les appareils mobiles */
 @media screen and (max-width: 768px) {
   .categories-list {
-    flex-direction: column; /* Afficher les éléments en colonne sur les appareils mobiles */
-    align-items: center; /* Centrer les éléments verticalement sur les appareils mobiles */
-    padding: 2%; /* Réduire l'espacement autour de la liste des catégories sur les appareils mobiles */
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
   }
 }
 .categories-list a {
   padding: 1%;
-  color: #ffffff; /* Couleur du texte */
 }
 
+/* Styles pour la section 404 */
 .container404 {
-  display: flex; /* Utiliser Flexbox pour le positionnement */
-  background-color: rgba(122, 17, 122, 0.562); /* Couleur de fond */
+  display: flex;
+  background-color: rgba(122, 17, 122, 0.562);
   padding: 2em 6em;
   border-radius: 50px;
 }
 
 .fond404 {
-  flex: 1; /* Utiliser tout l'espace disponible */
-  padding-right: 20px; /* Espacement entre les deux div */
+  flex: 1;
+  padding-right: 20px;
 }
 
 .image-Logo {
-  flex: 1; /* Utiliser tout l'espace disponible */
+  flex: 1;
 }
 
 /* Media query pour masquer l'image sur les petits écrans */
 @media screen and (max-width: 768px) {
   .image-Logo {
-    display: none; /* Masquer l'image sur les écrans de petite taille */
+    display: none;
   }
 }/*# sourceMappingURL=404.css.map */
