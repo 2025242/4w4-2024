@@ -14,10 +14,6 @@
   }
 }
 
-/**.menu__header {
-  background: linear-gradient(to bottom, #e0b7d9, #2752ca)
-}**/
-
 .menu {
   //ul
   display: flex;
@@ -26,7 +22,7 @@
   padding: 1%;
 
   @media (min-width: 700px) {
-    flex-direction: row;
+
     display: flex;
 
   }
@@ -52,7 +48,7 @@ background-color: #d5bbe4;
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;

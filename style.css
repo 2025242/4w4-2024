@@ -420,7 +420,6 @@ body {
 }
 
 .menufooter {
-  text-align: center;
   color: #fff;
 }
 
@@ -466,6 +465,44 @@ body {
 /* Style pour les liens au survol */
 .footer-section a:hover {
   text-decoration: underline;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
 }
 
 /* Styles pour les liens */
@@ -565,7 +602,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 3.375rem);
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 1.375rem);
   font-weight: 400;
   margin-bottom: 100px;
   font-style: normal;
@@ -609,23 +646,6 @@ a:hover {
 }
 a:visited {
   color: var(--couleur-lien-visited);
-}
-
-button {
-  width: 40%;
-  font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
-  padding: 7px 15px;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  transition: color 0.3s;
-}
-
-button:hover {
-  background-color: #d9c9f3;
-  color: #000000;
 }
 
 /* //////////////////////////////// */
@@ -729,17 +749,12 @@ button:hover {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   padding: 2%;
-}
-
-.carte:hover {
-  transform: translateY(-5px);
 }
 
 .carte h3 {
@@ -934,9 +949,6 @@ code {
   }
 }
 
-/**.menu__header {
-  background: linear-gradient(to bottom, #e0b7d9, #2752ca)
-}**/
 .menu {
   display: flex;
   list-style-type: none;
@@ -945,7 +957,6 @@ code {
 }
 @media (min-width: 700px) {
   .menu {
-    flex-direction: row;
     display: flex;
   }
 }
@@ -968,7 +979,7 @@ code {
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
