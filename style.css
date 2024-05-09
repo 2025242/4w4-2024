@@ -421,12 +421,24 @@ body {
 
 .menufooter {
   color: #fff;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content h2 {
+  margin-bottom: 0; /* Supprimez ou ajustez l'espacement au-dessous des h2 si nécessaire */
 }
 
 .footer-content {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.logoFooter {
+  width: 250px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .footer-section {
@@ -503,6 +515,50 @@ body {
 
 .social-icon__link:hover {
   transform: translateY(-10px);
+}
+
+.textealigne {
+  text-align: start;
+}
+
+/* Media Query pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Alignement vertical des éléments */
+    align-items: center; /* Centrage des éléments */
+  }
+  .footer-section {
+    width: 100%; /* Utilisation de la pleine largeur pour chaque section */
+    text-align: center; /* Centrage du texte */
+    margin-bottom: 20px; /* Maintien de l'espacement entre les sections */
+  }
+  .footer-section h2 {
+    font-size: 1.5rem; /* Adaptation de la taille du texte */
+  }
+  .footer-section p, .footer-section a {
+    font-size: 12px; /* Réduction de la taille de la police pour une meilleure lisibilité */
+  }
+  .logoFooter {
+    width: 180px; /* Réduction de la taille du logo */
+  }
+  .social-icon__link {
+    font-size: 1.5rem; /* Ajustement de la taille des icônes sociales */
+  }
+}
+/* Media Query pour les petits écrans (téléphones) */
+@media (max-width: 480px) {
+  .footer-section h2 {
+    font-size: 1.2rem; /* Taille de police réduite pour les très petits écrans */
+  }
+  .social-icon__link {
+    font-size: 1.2rem; /* Réduction supplémentaire de la taille des icônes sociales */
+  }
+}
+.conteneurRecherche {
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Aligner les éléments verticalement */
+  gap: 2px; /* Espace entre les éléments */
 }
 
 /* Styles pour les liens */
@@ -735,6 +791,10 @@ a:visited {
   padding: 5%;
 }
 
+.destinations .nft {
+  text-align: center;
+}
+
 .destinations {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -742,6 +802,19 @@ a:visited {
   padding: 5%;
 }
 
+/* Media Query pour les petits écrans - ajustements spécifiques */
+@media (max-width: 768px) {
+  .destination {
+    display: grid;
+    grid-template-columns: 1fr; /* Une colonne sur toute la largeur */
+    justify-items: center; /* Centrer les items dans la grille */
+    gap: 20px; /* Espacement entre les cases */
+    padding: 5%; /* Padding pour un peu d'espace autour des éléments */
+  }
+  .case {
+    max-width: 300px; /* Optionnel: Définir une largeur maximale pour les cases */
+  }
+}
 .carte {
   flex: 0 0 calc(30% - 20px); /* Taille des cartes */
   background-color: #6699ff;
@@ -952,8 +1025,7 @@ code {
 .menu {
   display: flex;
   list-style-type: none;
-  flex-direction: column;
-  padding: 1%;
+  padding: 2%;
 }
 @media (min-width: 700px) {
   .menu {

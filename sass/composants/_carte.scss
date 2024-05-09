@@ -1,14 +1,33 @@
 .destination {
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     padding: 5%;
+   
+}
+.destinations .nft{
+    text-align: center;
 }
 .destinations {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     padding: 5%;
+}
+/* Media Query pour les petits écrans - ajustements spécifiques */
+@media (max-width: 768px) {
+    .destination {
+        display: grid;
+        grid-template-columns: 1fr; /* Une colonne sur toute la largeur */
+        justify-items: center; /* Centrer les items dans la grille */
+        gap: 20px; /* Espacement entre les cases */
+        padding: 5%; /* Padding pour un peu d'espace autour des éléments */
+    }
+
+    .case {
+        max-width: 300px; /* Optionnel: Définir une largeur maximale pour les cases */
+    }
 }
 
 .carte {

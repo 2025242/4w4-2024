@@ -1,12 +1,24 @@
 .menufooter {
-       color: #fff;
-  
+  color: #fff;
+  //  display: flex;
+   // flex-direction: row;
+   text-align: center;
+    color: #fff;
 }
 
+.footer-content h2{
+    margin-bottom: 0; /* Supprimez ou ajustez l'espacement au-dessous des h2 si nécessaire */
+}
 .footer-content {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    gap: 40px;
+   // flex-wrap: wrap;
+}
+.logoFooter{
+ width: 250px;
+  height: auto;
+    margin-right: 10px
 }
 
 .footer-section {
@@ -22,7 +34,7 @@ font-size: 2rem;
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
-    text-align: center;
+   text-align: center;
 }
 
 .footer-section ul {
@@ -83,3 +95,54 @@ font-size: 2rem;
 .social-icon__link:hover {
   transform: translateY(-10px);
 }
+.textealigne{
+  text-align: start;
+}
+/* Media Query pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Alignement vertical des éléments */
+        align-items: center; /* Centrage des éléments */
+    }
+
+    .footer-section {
+        width: 100%; /* Utilisation de la pleine largeur pour chaque section */
+        text-align: center; /* Centrage du texte */
+        margin-bottom: 20px; /* Maintien de l'espacement entre les sections */
+    }
+
+    .footer-section h2 {
+        font-size: 1.5rem; /* Adaptation de la taille du texte */
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 12px; /* Réduction de la taille de la police pour une meilleure lisibilité */
+    }
+
+    .logoFooter {
+        width: 180px; /* Réduction de la taille du logo */
+    }
+
+    .social-icon__link {
+        font-size: 1.5rem; /* Ajustement de la taille des icônes sociales */
+    }
+}
+
+/* Media Query pour les petits écrans (téléphones) */
+@media (max-width: 480px) {
+    .footer-section h2 {
+        font-size: 1.2rem; /* Taille de police réduite pour les très petits écrans */
+    }
+
+    .social-icon__link {
+        font-size: 1.2rem; /* Réduction supplémentaire de la taille des icônes sociales */
+    }
+}
+
+.conteneurRecherche {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center;     /* Aligner les éléments verticalement */
+    gap: 2px;               /* Espace entre les éléments */
+}
+
