@@ -784,7 +784,33 @@ a:visited {
 /* //////////////////////////////// */
 /* Composants */
 /* //////////////////////////////// */
-.destination {
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  background-color: rgb(22, 20, 24);
+  color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+.global {
+  padding: 0 1rem;
+}
+
+.destination, .destinations, .nft-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
@@ -795,39 +821,62 @@ a:visited {
   text-align: center;
 }
 
-.destinations {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 5%;
-}
-
 /* Media Query pour les petits écrans - ajustements spécifiques */
 @media (max-width: 768px) {
-  .destination {
-    display: grid;
-    grid-template-columns: 1fr; /* Une colonne sur toute la largeur */
-    justify-items: center; /* Centrer les items dans la grille */
-    gap: 20px; /* Espacement entre les cases */
-    padding: 5%; /* Padding pour un peu d'espace autour des éléments */
+  .destination, .destinations, .nft-container {
+    grid-template-columns: 1fr;
+    padding: 2%;
+  }
+  .carte {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    max-width: 80px;
+  }
+  .search-form {
+    width: 100%;
   }
   .case {
     max-width: 300px; /* Optionnel: Définir une largeur maximale pour les cases */
   }
 }
+@media (max-width: 480px) {
+  .destination, .destinations, .nft-container {
+    grid-template-columns: 1fr;
+  }
+  .carte {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  header {
+    align-items: center;
+  }
+  .logo {
+    max-width: 60px;
+  }
+}
 .carte {
-  flex: 0 0 calc(30% - 20px); /* Taille des cartes */
   background-color: #6699ff;
   border: 1px solid #eaeaea;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   padding: 2%;
+}
+
+.carte img {
+  max-width: 100%;
 }
 
 .carte h3 {
