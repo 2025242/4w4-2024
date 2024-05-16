@@ -1057,6 +1057,14 @@ code {
   filter: opacity(0.5);
 }
 
+/* Conteneur principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espace entre les sections */
+  padding: 5%;
+}
+
 .menu-principal-container {
   position: absolute;
   z-index: 2;

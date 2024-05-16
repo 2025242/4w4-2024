@@ -18,57 +18,44 @@
 </div>
     <div id="accueil" class="global">
       
-       
-        <section>
-            <h2>Destination Populaire</h2>
-    <div class="destination">
-        <?php if (have_posts()):
-            while(have_posts()): the_post(); ?>
-                <div class="case">
-                    <div class="nft">
-                       <div class='main'>
-                            <?php
-                        // Récupérer le contenu de l'article
+       <div class="container">
+        
+    <section>
+        <h2>Destinations Populaires</h2>
+        <div class="destination">
+            <?php if (have_posts()):
+                while (have_posts()): the_post(); ?>
+                    <?php 
+                    if (!in_category('galerie')) { // Ignorer les articles de la catégorie "galerie"
+                        get_template_part('gabarits/categorie', 'carte');
+                    }
+                    ?>
+                <?php endwhile;
+            endif; ?>
+        </div>
+    </section>
+    <section>
+        <h2>Galerie</h2>
+        <div class="galerie">
+            <?php
+            // Requête personnalisée pour récupérer les articles de la catégorie "galerie"
+            $args = array(
+                'category_name' => 'galerie',
+                'posts_per_page' => 10, // Ajuste ce nombre selon tes besoins
+            );
+            $galerie_query = new WP_Query($args);
+            
+            if ($galerie_query->have_posts()) :
+                while ($galerie_query->have_posts()) : $galerie_query->the_post(); ?>
+                    <?php get_template_part('gabarits/categorie', 'galerie'); ?>
+                <?php endwhile;
+                wp_reset_postdata(); // Réinitialiser la requête globale de WordPress
+            endif; ?>
+        </div>
+    </section>
 
-                        $content = get_the_content();
+</div>
 
-                      // Récupérer l'URL de l'image mise en avant
-    $featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
-
-    // Vérifier si une image mise en avant existe
-    if (!empty($featured_image_url)) {
-        echo '<img class="tokenImage" src="' . esc_url($featured_image_url) . '" alt="NFT" />';
-    } else {
-        // Si aucune image mise en avant n'est définie, afficher une image par défaut
-        echo '<img class="tokenImage" src="chemin/vers/image-par-defaut.jpg" alt="NFT" />';
-    }
-                        ?>
-
-                            <h2><?php the_title(); ?></h2>
-                            <p class='description'><?php echo wp_trim_words(get_the_content(), 20); ?></p>
-                            <div class='tokenInfo'>
-                                <div class="price">
-                                    <ins>◘</ins>
-                                    <p><?php /* Insérer le prix dynamique */ ?></p>
-                                </div>
-                                <div class="duration">
-                                    <ins> <?php the_category(); ?></ins>
-                                    <p><?php /* Insérer la durée dynamique */ ?></p>
-                                </div>
-                            </div>
-                            <hr />
-                       
-                            <div class='creator'>
-
-                                <p><ins></ins>  <a href="<?php the_permalink(); ?>" class="lien-suite">Suite</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php endwhile;
-        endif; ?>
-    </div>
-</section>
     </div>
     <div id="evenement" class="global diagonal">
         <section>
