@@ -99,8 +99,9 @@ h1, h2, h3 {
     padding: 2%;
 }
 
-.carte:hover {
-  //  transform: translateY(-5px);
+.carte:hover h3 {
+    background-color: #a1b8f8; /* Couleur de fond lorsque survolé */
+    color: #131212; /* Couleur du texte lorsque survolé */
 }
 .carte img {
   max-width: 100%;
