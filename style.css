@@ -873,6 +873,7 @@ h1, h2, h3 {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin: 0 auto; /* Centrer les cartes horizontalement */
 }
 
 .image-container {
@@ -1079,14 +1080,14 @@ code {
 .menu-principal-container {
   position: absolute;
   z-index: 2;
-  transform: translateX(-120%);
-  transition: transform 0.3s ease-in-out;
+  transform: translateX(-300%); /* Animation de gauche à droite */
+  transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out; /* Ajout de la transition pour l'animation */
   padding: 2.5%;
 }
 @media (min-width: 700px) {
   .menu-principal-container {
     position: static;
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 }
 
@@ -1095,14 +1096,21 @@ code {
   list-style-type: none;
   padding: 2%;
 }
-@media (min-width: 700px) {
+@media (max-width: 699px) {
   .menu {
-    display: flex;
+    flex-direction: column; /* Affiche les éléments du menu verticalement sur les appareils mobiles */
+    align-items: flex-start; /* Alignement du contenu à gauche */
   }
 }
 
 .menu-item {
-  flex: 1 0 50px;
+  margin: 5px 10px; /* Ajuste l'espace entre chaque élément */
+  padding: 0; /* Réinitialise le padding */
+}
+@media (max-width: 699px) {
+  .menu-item {
+    padding: 4px; /* Applique le padding spécifique sur les appareils mobiles */
+  }
 }
 
 .menu-item a {
@@ -1117,7 +1125,7 @@ code {
   transition: background-color 0.3s;
   transition: color 0.3s;
   text-decoration: none;
-  padding: 10px;
+  padding: 12px;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   font-size: 12px;
   font-weight: bold;
@@ -1125,14 +1133,20 @@ code {
   text-align: center;
   justify-content: center;
 }
+@media (max-width: 699px) {
+  .menu-item a {
+    padding: 8px; /* Applique le padding spécifique sur les appareils mobiles */
+  }
+}
 
 /* gestion label #burger l'image svg est dans un label */
 #burger {
   color: red;
   display: block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  bottom: 10px; /* Placement en bas */
+  left: 10px; /* Placement à gauche */
+  z-index: 1;
 }
 @media (min-width: 700px) {
   #burger {
@@ -1147,10 +1161,11 @@ code {
 }
 
 #chk_burger:checked ~ .menu-principal-container {
-  transform: translateX(0);
+  transform: translateX(-200px);
 }
 
 .menu__header {
+  position: relative; /* Ajout de position relative pour positionner le bouton burger */
   display: flex;
   align-items: center;
   justify-content: space-between;
