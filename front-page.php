@@ -6,6 +6,7 @@
      <div class="banniere">
         <p>Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir ! Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir ! Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir ! Bienvenue dans un monde sans frontières, où chaque destination est une aventure à découvrir !</p>
     </div>
+    <a href="http://127.0.0.1:8080/4w4salma/inscription/" class="bouton">Inscription</a>
     </section><br>
      
         <h1><?php echo get_bloginfo("name") ?></h1>
