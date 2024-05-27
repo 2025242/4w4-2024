@@ -23,7 +23,7 @@
                         ?>
 
                             <h2><?php the_title(); ?></h2>
-                            <p class='description'><?php echo wp_trim_words(get_the_content(), 20); ?></p>
+                            <p class='descriptions'><?php echo wp_trim_words(get_the_content(), 20); ?></p>
                             <div class='tokenInfo'>
                                 <div class="price">
                                     <ins>◘</ins>

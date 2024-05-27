@@ -67,13 +67,6 @@
                 echo do_shortcode('[em_destination]');
                 ?></p>
         </section>
-        
-        <section>   
-            <?php
-                // Appel du shortcode directement dans le fichier front-page.php
-                echo do_shortcode('[em_destination]');
-                ?>
-        </section>
     </div>
     <div id="galerie" class="global">
         <section>

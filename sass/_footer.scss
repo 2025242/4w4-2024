@@ -1,9 +1,9 @@
-.menufooter {
-  color: #fff;
-  //  display: flex;
-   // flex-direction: row;
-   text-align: center;
-    color: #fff;
+.menufooter{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optionnel, pour centrer verticalement si nécessaire */
+
+  //padding: 10px; /* ajuster selon les besoins */
 }
 
 .footer-content h2{

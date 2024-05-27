@@ -16,7 +16,7 @@
 .menu {
     display: flex;
     list-style-type: none;
-    padding: 2%;
+ 
 
     @media (max-width: 699px) {
         flex-direction: column; /* Affiche les éléments du menu verticalement sur les appareils mobiles */
