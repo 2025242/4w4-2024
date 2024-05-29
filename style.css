@@ -1273,10 +1273,15 @@ code {
   border-radius: 10px;
   background-color: #f9f9f9;
   margin-top: 20px;
+  margin-bottom: 20px; /* Ajoute un espace en bas */
+  max-width: 50%; /* Réduit la largeur du conteneur */
+  margin-left: auto;
+  margin-right: auto; /* Centre le conteneur */
 }
 
 /* Style pour les champs de ville avoisinante, température minimale et maximale */
 .info-meteo p {
+  color: #3735a7;
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
@@ -1286,17 +1291,17 @@ code {
 
 /* Couleurs spécifiques pour chaque champ */
 .info-meteo .temperature-min {
-  background-color: #ffebee;
+  background-color: var(--couleur-arriere-accueil);
   color: #d32f2f;
 }
 
 .info-meteo .temperature-max {
-  background-color: #e8f5e9;
+  background-color: var(--couleur-arriere-accueil);
   color: #388e3c;
 }
 
 .info-meteo .ville-avoisinante {
-  background-color: #e1f5fe;
+  background-color: var(--couleur-arriere-accueil);
   color: #0277bd;
 }
 
@@ -1307,7 +1312,7 @@ code {
 }
 
 .image-container img {
-  max-width: 100%;
+  max-width: 10%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1316,6 +1321,21 @@ code {
 /* Transition pour rendre les changements de style plus fluides */
 .info-meteo p {
   transition: all 0.3s ease;
+}
+
+.info-meteo p {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajoute une transition */
+}
+
+/* Effet de hover pour les éléments p à l'intérieur de .info-meteo */
+.info-meteo p:hover {
+  transform: scale(1.02); /* Légère augmentation de la taille */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre portée */
 }
 
 /* //////////////////////////////// */
