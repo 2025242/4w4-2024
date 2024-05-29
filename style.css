@@ -419,6 +419,68 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.site__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--couleur-arriere-accueil);
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 100vh; /* S'assure que le conteneur prend toute la hauteur de la page */
+}
+
+.site__main h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #000000;
+}
+
+.conference__contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #d5bbe4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.conference__image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conference__description {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.5;
+  padding: 2%;
+  color: #000000;
+  width: 100%;
+}
+
+.conference__details {
+  text-align: center;
+  font-size: 1em;
+  color: #333;
+  width: 100%;
+}
+
+.conference__details p {
+  margin: 5px 0;
+}
+
+.conference__details span {
+  font-weight: bold;
+  color: #333;
+}
+
 .menufooter {
   display: flex;
   justify-content: center;
@@ -502,7 +564,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 50px 0;
   flex-wrap: wrap;
 }
 
@@ -1136,6 +1198,29 @@ code {
   .menu-item a {
     padding: 8px; /* Applique le padding spécifique sur les appareils mobiles */
   }
+}
+
+.boutonConference {
+  background-color: #d5bbe4;
+  color: #5472d5 !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  transition: color 0.5s ease; /* Ajout de la transition */
+}
+
+.boutonConference:hover {
+  background-color: #5f5a94; /* Repeat the background color if necessary */
+  color: #ffffff !important; /* Changez cette couleur selon vos préférences */
 }
 
 /* gestion label #burger l'image svg est dans un label */
