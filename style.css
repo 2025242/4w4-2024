@@ -939,7 +939,7 @@ h1, h2, h3 {
 }
 
 .image-container {
-  display: none;
+  display: flex;
   justify-content: center;
   padding: 2%;
 }
