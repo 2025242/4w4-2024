@@ -12,7 +12,7 @@
         <h1><?php echo get_bloginfo("name") ?></h1>
         <h2><?php echo get_bloginfo("description") ?></h2><br><br><br>
         <h3>Découvrez des destinations uniques, créez des souvenirs inoubliables</h3>
-        <a href="http://127.0.0.1:8080/4w4salma/inscription/" class="bouton">Inscription</a>
+        <a href="http://127.0.0.1:8080/4w4salma/inscription/" class="boutonConference">Conférence</a>
         <?php get_logosociaux(); ?>
     </section>
     
