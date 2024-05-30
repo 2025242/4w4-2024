@@ -34,7 +34,7 @@ h1, h2, h3 {
 .destinations .nft{
     text-align: center;
 }
-
+ 
 /* Media Query pour les petits écrans - ajustements spécifiques */
 @media (max-width: 768px) {
      .destination, .destinations, .nft-container {
@@ -47,6 +47,7 @@ h1, h2, h3 {
     margin: 0 auto;
     max-width: 90%;
   }
+
 
   header {
     flex-direction: column;
