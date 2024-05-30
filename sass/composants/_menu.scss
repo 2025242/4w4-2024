@@ -54,6 +54,7 @@
   justify-content: center;
  @media (max-width: 699px) {
         padding: 8px; /* Applique le padding spécifique sur les appareils mobiles */
+        margin-left: 65px;
     }
 }
 .boutonConference {
@@ -84,6 +85,7 @@
  color: red;
     display: block;
     position: absolute;
+    top: 10px;
     bottom: 10px; /* Placement en bas */
     left: 10px; /* Placement à gauche */
     z-index: 1;

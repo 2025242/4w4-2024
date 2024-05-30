@@ -1197,6 +1197,7 @@ code {
 @media (max-width: 699px) {
   .menu-item a {
     padding: 8px; /* Applique le padding spécifique sur les appareils mobiles */
+    margin-left: 65px;
   }
 }
 
@@ -1228,6 +1229,7 @@ code {
   color: red;
   display: block;
   position: absolute;
+  top: 10px;
   bottom: 10px; /* Placement en bas */
   left: 10px; /* Placement à gauche */
   z-index: 1;
