@@ -25,7 +25,7 @@ Ce map contient un map principal et plusieurs sous-map */
 :root {
   /* Calcul des teintes) */
   --u1: 220;
-  --u2: calc(var(--u1) - 180);
+  --u2: calc(var(--u1) - 180); 
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
   /* La saturation */
