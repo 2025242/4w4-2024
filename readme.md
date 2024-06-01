@@ -1,4 +1,4 @@
-# TP2 - Explorez l'Inconnu api code 34c21f04dc7aed178a9afa8802e40b90
+# epreuve finale - Explorez l'Inconnu 
 
 ## Auteur
 Salma Bourakkadi
@@ -8,104 +8,112 @@ Salma Bourakkadi
 ## GitHub Page
 [Lien vers la GitHub Page](https://2025242.github.io/4w4-2024/)
 
-### Champs Personnalisés
+# Objectifs
+Utilisez la structure de thème de votre TP2 pour réaliser le développement de l’épreuve finale.
 
-- **Température minimum/maximum/moyenne**
-- **Précipitation annuelle**
-- **Ville avoisinante**
+## Ce que vous devez réaliser
 
-### Filtres d'Extraction
+### 1. Page de Pays
+Créez une page décrivant par pays les plus belles destinations de voyages. La page sera créée à partir du modèle `template-pays.php`.
 
-Sur la page d'accueil, des filtres dynamiques permettent d'obtenir des résultats directement sans avoir à actualiser la page globalement en utilisant la REST API de WordPress.
+### 2. Extension basée sur API REST de WordPress
+Développez une extension qui génère un menu constitué des noms des pays et qui, selon le pays sélectionné, affiche l’ensemble des destinations de ce pays. L’extension sera intégrée dans le modèle de page à partir d’un shortcode.
 
-### Animations
+**Liste des pays :**
+- France
+- États-Unis
+- Canada
+- Argentine
+- Chili
+- Belgique
+- Maroc
+- Mexique
+- Japon
+- Italie
+- Islande
+- Chine
+- Grèce
+- Suisse
 
-- Amélioration de l'interactivité et de l'utilisabilité
-- Animations simples et efficaces
+## Barème de Correction sur 20 Points
 
-### Nouveaux Gabarits
+### 1. Menu Principal (1 point)
+- Le choix "Pays" est ajouté dans le menu principal.
 
-- Gabarit pour le formulaire de recherche
-- Gabarit pour la création des cartes
-- Modèle de page
+### 2. Page Pays (6 points)
+- La page "Pays" contient :
+  - Un titre : "Les plus beaux pays"
+  - Une introduction
+  - Une galerie d’images
+  - Deux vagues : Une séparant la section intro et la section REST-API, et une autre séparant la section REST-API et le pied de page
 
-## Barème de Correction (20 points)
+### 3. Section REST API (10 points)
+- Un menu affichant l’ensemble des pays comme sur la maquette.
+- Le contenu par défaut est constitué des destinations de la France.
+- En cliquant sur un bouton « Pays », les nouvelles destinations s’affichent.
+- Le format d’affichage est le même que celui décrit sur les maquettes.
+- L’image associée à une destination est une image mise en avant à partir de l’éditeur de WordPress.
+- Si la destination ne contient pas d’image mise-en-avant, une image temporaire « placeholder » accessible à partir de cette adresse : [https://via.placeholder.com/150](https://via.placeholder.com/150) est affichée.
+- Les destinations proviennent de votre base de données se trouvant sur votre compte WHC.CA.
 
-Chaque section sera évaluée sur :
-- Le design
-- L'intégration (niveau d'adaptabilité)
-- Fonctionnement
-- La codification générale
+### 4. GitHub (3 points)
+- Vous devez créer une branche EF sur votre dépôt de thème.
+- Vous devez créer un nouveau dépôt qui contiendra l’extension API-REST « Pays ».
+- Étalement des commits pendant les trois heures de l'EF (pas dans les 5 dernières minutes de l’EF).
+- Chaque commit devrait contenir un état fonctionnel de votre développement.
+- Chaque commit est commenté et préfixé par « ef-vos initial » et un commentaire décrivant la modification.
+- Un `README.md` contenant une description de l’épreuve et des modifications apportées, le nom de l’auteur, et un lien vers votre site distant WHC.CA.
+- Le lien vers votre dépôt GitHub est indiqué dans la section footer de votre site.
 
-### 1. Section Entête (3 points)
+---
 
-Fichier : `header.php`
+# README.md
 
-- Logo
-- Menu
-- Zone de recherche
-- Menu burger en mobile
+## Description de l'Épreuve
 
-### 2. Section Hero (3 points)
+Cette épreuve finale consiste à développer une page décrivant les plus belles destinations de voyages par pays, ainsi qu'une extension basée sur l'API REST de WordPress pour afficher et filtrer les destinations par pays.
 
-Fichier : `front-page.php`
+## Modifications Apportées
 
-- Titre
-- Titre secondaire
-- Texte
-- Image
-- Logos réseaux sociaux
-- Boutons vers annonces destinations spéciales
-- Nouvelle page inscription
-- Animations
+### Template `template-pays.php`
 
-### 3. L'accueil (3 points)
+1. **Séparation des Sections**
+    - Séparation du contenu général de la page et du menu des pays en deux sections distinctes pour une meilleure organisation.
 
-Fichier : `front-page.php`
+2. **Ajout d'une Vague**
+    - Ajout d'une vague entre les sections de contenu général et le menu des pays pour une esthétique améliorée.
 
-- Section Filtre REST API
-- Section liste des catégories
-- Section Populaire
-- Galerie d'images avec carrousel
-- Animations
+3. **Stylisation des Sections**
+    - Ajout de styles CSS spécifiques pour chaque section afin de contrôler leur apparence et leur comportement, surtout en mode responsive.
 
-### 4. Le Pied de Page (3 points)
+4. **Ajout d'un Gabarit pour la Vague**
+    - Création d'un fichier `gabarits/vague.php` pour inclure le SVG de la vague, permettant une réutilisation facile dans différentes parties du site.
 
-Fichier : `footer.php`
+### Extension API REST
 
-- Liens
-- Adresse du collège
-- Formulaire de recherche
-- Logos réseaux sociaux
-- Texte
-- Auteur
-- Adresse GitHub branche TP2
-- Adresse de la GitHub-page
-- Description du TP2
-- Image
+- **Fonctionnalité du Menu**
+    - Génération d'un menu constitué des noms des pays.
+    - Affichage des destinations selon le pays sélectionné.
 
-### 5. Une Destination de Voyage (3 points)
+- **Comportement par Défaut**
+    - Le contenu par défaut affiche les destinations de la France.
 
-Fichier : `single.php`
+- **Affichage des Destinations**
+    - Les destinations s'affichent au format décrit dans les maquettes.
+    - Utilisation des images mises en avant des articles WordPress.
+    - Affichage d'une image "placeholder" si aucune image mise en avant n'est disponible.
 
-- Une seule destination à la fois
-- Titre
-- Description
-- Champs personnalisés
-- Galerie d'images avec carrousel pour les destinations populaires
+### GitHub
 
-### 6. Liste des Destinations d'une Catégorie (3 points)
-
-Fichier : `category.php`
-
-- Titre de la catégorie
-- Plusieurs destinations sous forme de cartes
-- Cartes animées
-
-### Créer un readme (1 point)
-- Créer une GitHub Page : mettre à jour index.htm.
-- Ajouter l'adresse de la GitHub Page dans votre readme.
-- Le nom de l'auteur.
-- Courte description de votre TP1.
-
+- **Branche EF**
+    - Création d'une branche EF sur le dépôt de thème.
+- **Nouveau Dépôt**
+    - Création d'un nouveau dépôt pour l'extension API-REST « Pays ».
+- **Commits Étalés**
+    - Étalement des commits pendant les trois heures de l'EF.
+    - Chaque commit est commenté et préfixé par « ef-vos initial ».
+- **README.md**
+    - Inclusion d'un `README.md` contenant une description de l’épreuve, des modifications apportées, le nom de l’auteur et un lien vers le site distant WHC.CA.
+- **Lien GitHub**
+    - Lien vers le dépôt GitHub ajouté dans le footer du site.
 
